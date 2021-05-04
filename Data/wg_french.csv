@@ -1,0 +1,699 @@
+"num_item_id","definition","type","category","8","9","11","12","13","14","15","16"
+36,"aïe","word","sounds",0.02,0,0,0,0.06,0.04,0,0.2
+37,"allô","word","sounds",0,0,0.07,0.15,0.12,0.25,0,0.4
+38,"bêe bêe","word","sounds",0,0,0.14,0,0.07,0.08,0,0.6
+39,"cocorico","word","sounds",0.02,0,0,0,0.02,0.04,0.5,0
+40,"coin-coin","word","sounds",0.02,0,0.07,0,0.02,0,0.5,0.4
+41,"grrrr","word","sounds",0.02,0,0.07,0.04,0.12,0.21,0.5,0.2
+42,"meuh","word","sounds",0.02,0,0.04,0.04,0.06,0.04,0.5,0.4
+43,"miam-miam","word","sounds",0.02,0,0.14,0.12,0.15,0.08,1,0.2
+44,"miaou","word","sounds",0.02,0,0.04,0,0.07,0.21,0,0.2
+45,"ohoh","word","sounds",0,0,0.11,0.12,0.08,0.29,0.5,0.4
+46,"ouaf-ouaf","word","sounds",0.02,0,0.04,0.08,0.12,0.17,0.5,0.8
+47,"tchou tchou","word","sounds",0.02,0,0,0.04,0.01,0.04,0,0.2
+48,"vroum","word","sounds",0.04,0,0.07,0.08,0.06,0.12,0,0
+49,"ainsi font font","word","games_routines",0,0,0.04,0,0.06,0.04,0,0
+50,"attends","word","games_routines",0,0,0,0.04,0.03,0,0,0.2
+51,"au revoir","word","games_routines",0,0,0.07,0,0.21,0.21,0,0.4
+52,"bain","word","games_routines",0,0,0.04,0.04,0.06,0.12,0,0.2
+53,"bonjour","word","games_routines",0,0,0,0,0.06,0.08,0,0.2
+54,"bonne nuit","word","games_routines",0,0,0.04,0,0.02,0,0,0.2
+55,"bravo","word","games_routines",0,0,0.04,0,0.14,0.08,0.5,0.2
+56,"chut","word","games_routines",0.04,0,0,0,0.03,0.08,0,0.2
+57,"coucou","word","games_routines",0,0,0.07,0,0.08,0.17,0.5,0
+58,"déjeuner","word","games_routines",0,0,0,0,0,0,0,0
+59,"dîner","word","games_routines",0,0,0,0,0,0,0,0
+60,"merci","word","games_routines",0,0,0.04,0,0.08,0.12,0,0
+61,"ne fais pas","word","games_routines",0,0,0,0,0,0,0,0
+62,"non","word","games_routines",0,0,0.07,0.15,0.17,0.25,0,0.4
+63,"oui","word","games_routines",0,0,0,0,0.03,0.08,0,0.4
+64,"petit déjeuner","word","games_routines",0,0,0,0,0,0,0,0
+65,"s'il te plaît","word","games_routines",0,0,0,0,0,0.04,0,0
+66,"salut","word","games_routines",0,0,0,0,0.02,0,0,0
+67,"sieste","word","games_routines",0,0,0,0,0,0,0,0
+68,"veux","word","games_routines",0,0,0.04,0.04,0.01,0,0,0.2
+69,"abeille","word","animals",0.02,0,0,0,0.01,0,0,0.2
+70,"agneau","word","animals",0,0,0,0,0,0,0,0
+71,"âne","word","animals",0.02,0,0,0,0.01,0,0,0
+72,"animal","word","animals",0,0,0,0,0,0,0,0
+73,"bébé chat","word","animals",0,0,0,0,0,0,0,0
+74,"bébé chien","word","animals",0,0,0,0,0,0,0,0
+75,"biche","word","animals",0,0,0,0,0,0,0,0
+76,"canard","word","animals",0,0,0.04,0,0.02,0,0,0
+77,"chat","word","animals",0,0,0.04,0.04,0.02,0.25,0,0
+78,"cheval","word","animals",0,0,0,0,0.01,0,0,0.2
+79,"chèvre","word","animals",0,0,0,0,0,0,0,0
+80,"chien","word","animals",0,0,0.04,0.04,0.02,0.04,0,0
+81,"cochon","word","animals",0,0,0,0,0.01,0,0,0
+82,"dindon","word","animals",0,0,0,0,0,0,0,0
+83,"écureuil","word","animals",0,0,0,0,0,0,0,0
+84,"éléphant","word","animals",0,0,0,0,0.01,0,0,0
+85,"girafe","word","animals",0,0,0,0,0,0,0.5,0
+86,"grenouille","word","animals",0,0,0,0,0.01,0,0,0
+87,"hibou","word","animals",0,0,0,0,0,0,0,0
+88,"lapin","word","animals",0,0,0,0,0.02,0.04,0,0
+89,"lion","word","animals",0,0,0,0,0,0.04,0,0
+90,"mouton","word","animals",0.02,0,0,0,0.06,0,0,0.2
+91,"nounours","word","animals",0,0,0,0,0,0,0,0
+92,"oie","word","animals",0,0,0,0,0,0,0,0.2
+93,"oiseau","word","animals",0,0,0,0,0.01,0.04,0,0
+94,"ours","word","animals",0,0,0,0,0.01,0,0,0
+95,"papillon","word","animals",0,0,0,0,0.01,0,0,0
+96,"petite bête","word","animals",0,0,0,0,0,0,0,0
+97,"pingouin","word","animals",0,0,0,0,0,0,0,0
+98,"poisson","word","animals",0,0,0,0,0.01,0.04,0,0
+99,"poney","word","animals",0,0,0,0,0,0,0,0
+100,"poule","word","animals",0,0,0,0,0,0,0,0
+101,"singe","word","animals",0,0,0,0,0,0,0,0.2
+102,"souris","word","animals",0,0,0,0,0,0,0,0
+103,"tigre","word","animals",0,0,0,0,0.01,0,0,0
+104,"tortue","word","animals",0,0,0,0,0.01,0,0,0.2
+105,"vache","word","animals",0,0,0,0,0.01,0,0,0
+106,"baguette","word","food_drink",0,0,0,0,0,0,0,0
+107,"banane","word","food_drink",0,0,0,0,0.01,0,0,0
+108,"beurre","word","food_drink",0,0,0,0,0,0,0,0
+109,"boisson","word","food_drink",0,0,0,0,0,0,0,0
+110,"café","word","food_drink",0,0,0,0,0,0,0,0
+111,"carotte","word","food_drink",0,0,0,0,0,0,0,0
+112,"céréales","word","food_drink",0,0,0,0,0,0,0,0
+113,"clémentine","word","food_drink",0,0,0,0,0,0,0,0
+114,"cornflakes","word","food_drink",0,0,0,0,0,0,0,0
+115,"eau","word","food_drink",0,0,0,0.04,0.02,0.12,0,0.4
+116,"fromage","word","food_drink",0,0,0,0,0,0,0,0
+117,"gâteau","word","food_drink",0.02,0,0,0,0.06,0.04,0,0.8
+118,"gâteaux apéro","word","food_drink",0,0,0,0,0,0,0,0
+119,"glace","word","food_drink",0,0,0,0,0,0,0,0.2
+120,"jus de fruit","word","food_drink",0,0,0,0,0,0,0,0
+121,"lait","word","food_drink",0,0,0,0,0,0,0,0.2
+122,"nourriture","word","food_drink",0,0,0,0,0,0,0,0
+123,"œuf","word","food_drink",0,0,0,0,0,0,0,0
+124,"orange","word","food_drink",0,0,0,0,0,0,0,0.2
+125,"pain","word","food_drink",0,0,0,0.04,0.1,0.08,0,0.4
+126,"pâtes","word","food_drink",0,0,0,0,0.01,0,0,0
+127,"petits gâteaux","word","food_drink",0,0,0,0,0,0.04,0,0
+128,"petits pois","word","food_drink",0,0,0,0,0,0,0,0
+129,"pizza","word","food_drink",0,0,0,0,0,0,0,0
+130,"poisson","word","food_drink",0,0,0,0,0.01,0,0,0
+131,"pomme","word","food_drink",0,0,0,0.04,0.02,0,0.5,0
+132,"poulet","word","food_drink",0,0,0,0,0,0,0,0
+133,"purée","word","food_drink",0,0,0,0,0.01,0,0,0
+134,"raisin","word","food_drink",0,0,0,0,0,0,0,0
+135,"soupe","word","food_drink",0,0,0,0,0,0,0,0
+136,"spaghetti","word","food_drink",0,0,0,0,0,0,0,0
+137,"sucre","word","food_drink",0,0,0,0,0,0,0,0
+138,"tartine","word","food_drink",0,0,0,0,0,0,0,0
+139,"viande","word","food_drink",0,0,0,0,0,0,0,0
+140,"balle","word","toys",0,0,0.07,0,0.05,0.04,0,0
+141,"ballon","word","toys",0,0,0.04,0,0.05,0,0,0
+142,"bulles","word","toys",0,0,0,0,0,0,0,0
+143,"crayon","word","toys",0,0,0,0,0,0,0,0
+144,"cube","word","toys",0,0,0,0,0,0,0,0.2
+145,"livre","word","toys",0,0,0,0,0.01,0,0,0
+146,"poupée","word","toys",0,0,0,0,0.02,0,0,0.2
+147,"aïe bobo","word","body_parts",0,0,0,0,0,0,0,0.2
+148,"bouche","word","body_parts",0,0,0,0,0,0,0,0
+149,"bras","word","body_parts",0,0,0,0,0,0,0,0
+150,"cheveux","word","body_parts",0,0,0,0,0.01,0,0,0.2
+151,"cœur","word","body_parts",0,0,0,0,0,0,0,0.2
+152,"dent","word","body_parts",0,0,0,0,0.01,0,0,0
+153,"doigt","word","body_parts",0,0,0,0,0,0,0,0
+154,"doigt de pied","word","body_parts",0,0,0,0,0,0,0,0
+155,"figure","word","body_parts",0,0,0,0,0,0,0,0
+156,"genou","word","body_parts",0,0,0,0,0,0,0,0
+157,"jambe","word","body_parts",0,0,0,0,0,0,0,0
+158,"joue","word","body_parts",0,0,0,0,0,0,0,0
+159,"langue","word","body_parts",0,0,0,0,0,0,0,0
+160,"main","word","body_parts",0,0,0,0,0.01,0,0,0.2
+161,"nez","word","body_parts",0,0,0,0,0.01,0,0,0.2
+162,"nombril","word","body_parts",0,0,0,0,0,0,0,0.2
+163,"oreille","word","body_parts",0,0,0,0,0,0,0,0
+164,"pied","word","body_parts",0,0,0,0,0.01,0,0,0.4
+165,"pouce","word","body_parts",0,0,0,0,0,0,0,0
+166,"tête","word","body_parts",0,0,0,0,0.02,0,0,0
+167,"ventre","word","body_parts",0,0,0,0,0,0,0,0
+168,"yeux","word","body_parts",0,0,0,0,0,0,0,0
+169,"bébé","word","people",0,0,0,0,0.06,0.04,0,0.2
+170,"dame","word","people",0,0,0,0,0,0,0.5,0
+171,"enfant","word","people",0,0,0,0,0,0,0,0
+172,"fille","word","people",0,0,0,0,0.07,0.04,0.5,0
+173,"frère","word","people",0.02,0,0,0,0.01,0,0,0
+174,"garçon","word","people",0,0,0,0,0,0,0,0.2
+175,"gens","word","people",0,0,0,0,0,0.04,0,0
+176,"grand-mère","word","people",0,0,0,0,0.01,0,0,0.2
+177,"grand-père","word","people",0,0,0,0,0.02,0,0,0
+178,"maître/sse","word","people",0,0,0,0,0,0,0,0
+179,"maman","word","people",0.11,0,0.14,0.23,0.35,0.62,0.5,0.8
+180,"nom de l'enfant","word","people",0,0,0,0,0.03,0.04,0,0
+181,"nom de la nounou","word","people",0,0,0.07,0.04,0.01,0.08,0,0
+182,"nounou","word","people",0,0,0,0,0.02,0,0,0
+183,"oncle","word","people",0,0,0,0,0,0,0,0
+184,"papa","word","people",0.13,0,0.14,0.19,0.35,0.62,0.5,0.6
+185,"personne","word","people",0,0,0,0,0,0,0,0
+186,"sœur","word","people",0,0,0,0,0.01,0,0,0
+187,"tante","word","people",0.02,0,0,0.04,0.09,0.08,0.5,0.2
+188,"basket","word","clothing",0,0,0,0,0,0,0,0
+189,"bavoir/bavette","word","clothing",0,0,0,0,0.01,0,0,0
+190,"body","word","clothing",0,0,0,0,0,0,0,0
+191,"bottes","word","clothing",0,0,0,0,0,0,0,0
+192,"boutons","word","clothing",0,0,0,0,0,0,0,0
+193,"ceinture","word","clothing",0,0,0,0,0,0,0,0
+194,"chapeau","word","clothing",0,0,0,0,0,0,0,0
+195,"chaussettes","word","clothing",0,0,0.04,0,0.02,0.04,0,0.2
+196,"chausson/pantoufle","word","clothing",0,0,0,0,0.01,0,0,0.2
+197,"chaussure","word","clothing",0,0,0,0,0.05,0,0,0.2
+198,"chemise","word","clothing",0,0,0,0,0,0,0,0
+199,"collants","word","clothing",0,0,0,0,0,0,0,0
+200,"collier","word","clothing",0,0,0,0,0,0,0,0
+201,"combinaison de ski","word","clothing",0,0,0,0,0,0,0,0
+202,"couche","word","clothing",0,0,0.04,0,0.01,0,0,0.2
+203,"culotte/slip","word","clothing",0,0,0,0,0,0,0,0
+204,"écharpe","word","clothing",0,0,0,0,0,0,0,0
+205,"gants","word","clothing",0,0,0,0,0,0,0,0
+206,"grenouillère","word","clothing",0,0,0,0,0,0,0,0
+207,"jeans","word","clothing",0,0,0,0,0,0,0,0
+208,"manteau","word","clothing",0,0,0,0,0.01,0,0,0.2
+209,"moufles","word","clothing",0,0,0,0,0,0,0,0
+210,"pantalon","word","clothing",0,0,0,0,0.01,0,0,0
+211,"perles","word","clothing",0,0,0,0,0,0,0,0
+212,"pull","word","clothing",0,0,0,0,0,0,0,0
+213,"pyjama","word","clothing",0,0,0,0,0.02,0,0,0
+214,"robe","word","clothing",0,0,0,0,0,0,0,0
+215,"salopette","word","clothing",0,0,0,0,0,0,0,0
+216,"short","word","clothing",0,0,0,0,0,0,0,0
+217,"sweat","word","clothing",0,0,0,0,0,0,0,0
+218,"tee-shirt","word","clothing",0,0,0,0,0.01,0,0,0
+219,"veste","word","clothing",0,0,0,0,0,0,0,0
+220,"argent","word","household",0,0,0,0,0,0,0,0
+221,"aspirateur","word","household",0,0,0,0,0.01,0,0,0
+222,"assiette","word","household",0,0,0,0,0,0,0,0
+223,"balai","word","household",0,0,0,0,0,0,0,0
+224,"biberon","word","household",0,0,0,0,0.02,0.04,0,0
+225,"boîte","word","household",0,0,0,0,0,0,0,0
+226,"bol","word","household",0,0,0,0,0,0,0,0
+227,"bouteille","word","household",0,0,0,0,0,0,0,0
+228,"brosse","word","household",0,0,0,0,0.01,0,0,0
+229,"brosse à dent","word","household",0,0,0,0,0,0,0,0
+230,"ciseaux","word","household",0,0,0,0,0,0,0,0
+231,"clefs","word","household",0,0,0,0,0.02,0,0,0
+232,"couverture","word","household",0,0,0,0,0,0,0,0
+233,"cuillère","word","household",0,0,0,0,0.02,0,0,0
+234,"dent","word","household",0,0,0,0,0,0,0,0
+235,"feuille","word","household",0,0,0,0,0,0,0,0
+236,"fourchette","word","household",0,0,0,0,0,0,0,0
+237,"horloge","word","household",0,0,0,0,0,0,0,0
+238,"lampe","word","household",0,0,0,0,0,0,0,0
+239,"lumière","word","household",0,0,0,0,0.01,0,0,0
+240,"lunettes","word","household",0,0,0,0,0,0,0,0
+241,"marteau","word","household",0,0,0,0,0,0,0,0
+242,"médicaments","word","household",0,0,0,0.04,0.01,0,0,0.2
+243,"montre","word","household",0,0,0,0,0,0,0,0
+244,"musique","word","household",0,0,0,0,0.01,0,0,0
+245,"oreiller","word","household",0,0,0,0,0,0,0,0
+246,"papier","word","household",0,0,0,0,0,0,0,0
+247,"peigne","word","household",0,0,0,0,0,0,0,0
+248,"photo","word","household",0,0,0,0,0,0,0,0
+249,"plante","word","household",0,0,0,0,0,0,0,0
+250,"plat","word","household",0,0,0,0,0,0,0,0
+251,"porte-monnaie","word","household",0,0,0,0,0,0,0,0
+252,"poubelle","word","household",0,0,0,0,0,0,0,0
+253,"radio","word","household",0,0,0,0,0,0,0,0
+254,"savon","word","household",0,0,0,0,0.02,0,0,0.2
+255,"serviette","word","household",0,0,0,0,0,0,0,0
+256,"sirop","word","household",0,0,0,0,0,0,0,0
+257,"sous/pièces","word","household",0,0,0,0,0,0,0,0
+258,"sucette","word","household",0.02,0,0,0,0.01,0,0,0
+259,"tasse","word","household",0,0,0,0,0,0,0,0
+260,"télécommande","word","household",0,0,0,0,0,0,0,0
+261,"téléphone","word","household",0,0,0,0,0,0,0,0
+262,"verre","word","household",0,0,0,0,0,0,0,0
+263,"baignoire","word","furniture_rooms",0,0,0,0,0,0,0,0
+264,"berceau","word","furniture_rooms",0,0,0,0,0,0,0,0
+265,"canapé","word","furniture_rooms",0,0,0,0,0,0,0,0
+266,"chaise","word","furniture_rooms",0,0,0,0,0,0,0,0
+267,"chaise haute","word","furniture_rooms",0,0,0,0,0,0,0,0
+268,"chambre","word","furniture_rooms",0,0,0,0,0,0,0,0
+269,"cuisinière","word","furniture_rooms",0,0,0,0,0,0,0,0
+270,"escalier","word","furniture_rooms",0,0,0,0,0.02,0.04,0,0
+271,"évier","word","furniture_rooms",0,0,0,0,0,0,0,0
+272,"fauteuil","word","furniture_rooms",0,0,0,0,0,0,0,0
+273,"fenêtre","word","furniture_rooms",0,0,0,0,0,0,0,0
+274,"four","word","furniture_rooms",0,0,0,0,0,0,0,0
+275,"frigo","word","furniture_rooms",0,0,0,0,0,0,0,0
+276,"garage","word","furniture_rooms",0,0,0,0,0,0,0,0
+277,"lavabo","word","furniture_rooms",0,0,0,0,0,0,0,0
+278,"lit","word","furniture_rooms",0,0,0,0,0,0,0,0
+279,"parc","word","furniture_rooms",0,0,0,0,0.01,0,0,0
+280,"porte","word","furniture_rooms",0,0,0,0,0.01,0.04,0,0
+281,"pot","word","furniture_rooms",0,0,0,0,0,0,0,0
+282,"salle de bain","word","furniture_rooms",0,0,0,0,0.01,0,0,0
+283,"salon","word","furniture_rooms",0,0,0,0,0,0,0,0
+284,"table","word","furniture_rooms",0,0,0,0,0.01,0,0,0
+285,"télé","word","furniture_rooms",0,0,0,0,0,0,0,0
+286,"tiroir","word","furniture_rooms",0,0,0,0,0,0,0,0
+287,"arbre","word","outside_places",0,0,0,0,0,0,0,0
+288,"balançoire","word","outside_places",0,0,0,0,0,0,0,0
+289,"caillou","word","outside_places",0,0,0,0,0,0,0,0.2
+290,"ciel","word","outside_places",0,0,0,0,0,0,0,0
+291,"cour","word","outside_places",0,0,0,0,0,0,0,0
+292,"crèche","word","outside_places",0,0,0,0,0,0,0,0.2
+293,"dehors","word","outside_places",0,0,0,0,0.02,0,0,0
+294,"eau","word","outside_places",0.02,0,0,0.12,0.06,0,0,0.4
+295,"école","word","outside_places",0,0,0,0,0,0,0,0.2
+296,"église","word","outside_places",0,0,0,0,0,0,0,0
+297,"étoile","word","outside_places",0,0,0,0,0,0,0,0
+298,"fête","word","outside_places",0,0,0,0,0,0,0,0
+299,"fleur","word","outside_places",0,0,0,0,0,0,0,0
+300,"garderie","word","outside_places",0,0,0,0,0,0,0,0
+301,"jardin","word","outside_places",0,0,0,0,0,0,0,0
+302,"lune","word","outside_places",0,0,0,0,0,0,0,0
+303,"magasin","word","outside_places",0,0,0,0,0.01,0,0,0.2
+304,"maison","word","outside_places",0,0,0,0,0.02,0,0,0.2
+305,"neige","word","outside_places",0,0,0,0,0,0,0,0
+306,"parc","word","outside_places",0,0,0,0,0.01,0,0,0
+307,"pelle","word","outside_places",0,0,0,0,0,0,0,0
+308,"piscine","word","outside_places",0,0,0,0,0,0,0,0
+309,"plage","word","outside_places",0,0,0,0,0,0,0,0
+310,"pluie","word","outside_places",0,0,0,0,0,0,0,0
+311,"soleil","word","outside_places",0,0,0,0,0,0,0,0.2
+312,"toboggan","word","outside_places",0,0,0,0,0.01,0.04,0,0
+313,"travail","word","outside_places",0,0,0,0,0.01,0,0,0
+314,"zoo","word","outside_places",0,0,0,0,0,0,0,0
+315,"avion","word","vehicles",0.02,0,0,0,0,0.04,0,0
+316,"bus","word","vehicles",0.02,0,0,0,0,0,0,0
+317,"camion","word","vehicles",0.02,0,0,0,0,0,0,0
+318,"camion de pompier","word","vehicles",0.02,0,0,0,0,0,0,0
+319,"moto","word","vehicles",0.02,0,0,0,0,0,0,0
+320,"poussette","word","vehicles",0.02,0,0,0,0.02,0.04,0,0.2
+321,"train","word","vehicles",0.02,0,0,0,0,0,0,0
+322,"vélo","word","vehicles",0.02,0,0,0,0,0,0,0
+323,"voiture","word","vehicles",0.02,0,0,0,0,0,0,0
+324,"attention","word","descriptive_words",0,0,0.04,0,0.02,0,0,0
+325,"avoir faim","word","descriptive_words",0,0,0,0,0,0,0,0
+326,"avoir peur","word","descriptive_words",0,0,0,0,0,0,0,0
+327,"avoir soif","word","descriptive_words",0,0,0,0,0,0,0,0
+328,"beau/belle","word","descriptive_words",0,0,0,0,0,0,0,0.2
+329,"bien","word","descriptive_words",0,0,0,0,0.02,0,0,0.2
+330,"blessé","word","descriptive_words",0,0,0,0,0,0,0,0.2
+331,"bleu","word","descriptive_words",0,0,0,0,0,0,0,0
+332,"bon/ne","word","descriptive_words",0,0,0,0.04,0.06,0.04,0,0.2
+333,"cassé","word","descriptive_words",0,0,0,0,0.01,0,0,0
+334,"chaud/e","word","descriptive_words",0,0,0,0,0,0,0,0
+335,"content/e","word","descriptive_words",0,0,0,0,0,0,0,0
+336,"dégoûtant/e","word","descriptive_words",0,0,0,0,0,0,0,0
+337,"doux/ce","word","descriptive_words",0,0,0,0,0.01,0,0,0
+338,"dur","word","descriptive_words",0,0,0,0,0,0,0,0
+339,"endormi","word","descriptive_words",0,0,0,0,0,0,0,0
+340,"fatigué","word","descriptive_words",0,0,0,0,0.01,0,0,0
+341,"froid","word","descriptive_words",0,0,0,0,0,0,0,0
+342,"gentil/le","word","descriptive_words",0,0,0,0,0.01,0,0,0
+343,"grand","word","descriptive_words",0,0,0,0,0,0,0,0
+344,"joli","word","descriptive_words",0,0,0,0,0,0,0,0
+345,"malade","word","descriptive_words",0,0,0,0,0,0,0,0
+346,"méchant/e","word","descriptive_words",0,0,0,0,0,0,0,0
+347,"mignon/ne","word","descriptive_words",0,0,0,0,0.01,0,0,0
+348,"mouillé","word","descriptive_words",0,0,0,0,0,0,0,0
+349,"parti","word","descriptive_words",0,0,0,0,0.01,0,0,0
+350,"pas bon","word","descriptive_words",0,0,0,0,0.01,0,0,0.2
+351,"petit/e","word","descriptive_words",0,0,0,0,0,0,0,0
+352,"propre","word","descriptive_words",0,0,0,0,0,0,0,0
+353,"rouge","word","descriptive_words",0,0,0,0,0.01,0,0,0
+354,"sale","word","descriptive_words",0,0,0,0,0.01,0,0,0.2
+355,"sec/che","word","descriptive_words",0,0,0,0,0,0,0,0
+356,"sombre","word","descriptive_words",0,0,0,0,0,0,0,0
+357,"tendre","word","descriptive_words",0,0,0,0,0,0,0,0
+358,"vide","word","descriptive_words",0,0,0,0,0,0,0,0
+359,"vieux/vieille","word","descriptive_words",0,0,0,0,0,0,0,0
+360,"vilain/e","word","descriptive_words",0.02,0,0,0.12,0.07,0,0,0.2
+361,"vite","word","descriptive_words",0,0,0,0,0.02,0,0,0
+362,"aider","word","action_words",0,0,0,0,0,0,0,0
+363,"aimer","word","action_words",0,0,0,0,0,0,0,0
+364,"aller","word","action_words",0,0,0,0,0,0,0,0
+365,"apporter","word","action_words",0,0,0,0,0.01,0.04,0,0
+366,"arrêter","word","action_words",0,0,0,0,0,0.04,0,0.2
+367,"avoir sommeil","word","action_words",0,0,0,0,0,0,0,0
+368,"balancer","word","action_words",0,0,0,0,0,0,0,0
+369,"boire","word","action_words",0,0,0,0,0.01,0,0,0
+370,"casser","word","action_words",0,0,0,0,0.01,0,0,0
+371,"chanter","word","action_words",0,0,0,0,0,0,0,0
+372,"chatouiller","word","action_words",0,0,0,0,0,0,0,0.2
+373,"conduire","word","action_words",0,0,0,0,0,0,0,0
+374,"courir","word","action_words",0,0,0,0,0,0,0,0
+375,"danser","word","action_words",0,0,0,0,0.01,0,0,0.2
+376,"dessiner","word","action_words",0,0,0,0,0,0,0,0.2
+377,"dire","word","action_words",0,0,0,0,0,0,0,0
+378,"donner","word","action_words",0,0,0,0,0.01,0,0,0
+379,"donner un coup de pied","word","action_words",0,0,0,0,0,0,0,0
+380,"dormir","word","action_words",0,0,0,0,0,0,0,0.2
+381,"éclabousser","word","action_words",0,0,0,0,0,0,0,0
+382,"écrire","word","action_words",0,0,0,0,0,0,0,0
+383,"essuyer","word","action_words",0,0,0,0,0,0,0,0
+384,"faire du vélo/de la moto","word","action_words",0,0,0,0,0,0,0,0
+385,"faire un bisou","word","action_words",0,0,0,0,0.01,0,0,0.2
+386,"fermer","word","action_words",0,0,0,0,0.01,0,0,0
+387,"finir","word","action_words",0,0,0,0,0,0,0,0
+388,"jeter","word","action_words",0,0,0,0,0,0,0,0
+389,"jouer","word","action_words",0,0,0,0,0,0,0,0
+390,"laver","word","action_words",0,0,0,0,0,0,0,0
+391,"lire","word","action_words",0,0,0,0,0,0,0,0
+392,"manger","word","action_words",0,0,0,0,0.02,0,0,0.2
+393,"marcher","word","action_words",0,0,0,0,0,0,0,0
+394,"mettre","word","action_words",0,0,0,0,0,0,0,0
+395,"montrer","word","action_words",0,0,0,0,0,0,0,0
+396,"mordre","word","action_words",0,0,0,0,0.01,0,0,0
+397,"nager","word","action_words",0,0,0,0,0,0,0,0
+398,"nettoyer","word","action_words",0,0,0,0,0,0,0,0
+399,"nourrir","word","action_words",0,0,0,0,0,0,0,0
+400,"ouvrir","word","action_words",0,0,0,0,0,0,0,0
+401,"pleurer","word","action_words",0,0,0,0,0,0,0,0
+402,"pousser","word","action_words",0,0,0,0,0,0,0,0
+403,"prendre","word","action_words",0,0,0,0,0,0,0,0
+404,"prendre dans ses bras","word","action_words",0,0,0,0,0.01,0,0,0
+405,"recevoir","word","action_words",0,0,0,0,0,0,0,0
+406,"regarder","word","action_words",0,0,0,0,0.03,0.04,0,0.2
+407,"sauter","word","action_words",0,0,0,0,0,0,0,0
+408,"se cogner","word","action_words",0,0,0,0,0,0,0,0.2
+409,"se dépêcher","word","action_words",0,0,0,0,0,0,0,0
+410,"souffler","word","action_words",0,0,0,0,0.01,0.04,0,0
+411,"sourire","word","action_words",0,0,0,0,0,0,0,0
+412,"taper","word","action_words",0,0,0,0,0.01,0,0,0
+413,"tirer","word","action_words",0,0,0,0,0,0,0,0
+414,"tomber","word","action_words",0,0,0,0,0.01,0,0,0
+415,"toucher","word","action_words",0,0,0,0,0.01,0,0,0
+416,"voir","word","action_words",0,0,0,0,0,0,0,0
+417,"aujourd'hui","word","time_words",0,0,0,0,0,0,0,0
+418,"ce soir","word","time_words",0,0,0,0,0,0,0,0
+419,"demain","word","time_words",0,0,0,0,0,0,0,0
+420,"jour","word","time_words",0,0,0,0,0.01,0,0,0
+421,"maintenant","word","time_words",0,0,0,0,0,0,0,0
+422,"matin","word","time_words",0,0,0,0,0,0,0,0
+423,"nuit","word","time_words",0,0,0,0,0,0,0,0
+424,"dans","word","prepositions",0,0,0,0,0.01,0,0,0
+425,"dedans","word","prepositions",0,0,0,0,0.01,0,0,0
+426,"dehors","word","prepositions",0,0,0,0.04,0.01,0,0,0
+427,"derrière","word","prepositions",0,0,0,0,0,0,0,0
+428,"en bas","word","prepositions",0,0,0,0,0,0,0,0
+429,"en haut","word","prepositions",0,0,0,0,0,0,0,0
+430,"là","word","prepositions",0,0,0,0,0.03,0.04,0,0
+431,"là-bas","word","prepositions",0,0,0,0,0,0,0,0
+432,"loin","word","prepositions",0,0,0,0,0,0,0,0
+433,"sous","word","prepositions",0,0,0,0,0,0,0,0
+434,"sur","word","prepositions",0,0,0,0,0,0,0,0
+435,"à elle/sa","word","pronouns",0,0,0,0,0,0,0,0
+436,"à lui/son","word","pronouns",0,0,0,0,0,0,0,0
+437,"à moi","word","pronouns",0,0,0,0,0,0,0,0
+438,"ça","word","pronouns",0,0,0,0,0,0.04,0,0
+439,"je","word","pronouns",0,0,0,0,0,0,0,0
+440,"ma/mon/mes","word","pronouns",0,0,0,0,0.02,0.04,0,0
+441,"moi","word","pronouns",0,0,0,0,0.01,0,0,0
+442,"votre/ta/ton","word","pronouns",0,0,0,0,0.01,0,0,0
+443,"vous/tu","word","pronouns",0,0,0,0,0,0,0,0
+444,"comment","word","question_words",0,0,0,0,0,0,0,0
+445,"où","word","question_words",0,0,0,0,0.01,0,0,0
+446,"pourquoi","word","question_words",0,0,0.04,0,0,0,0,0
+447,"quand","word","question_words",0,0,0,0,0.01,0,0,0
+448,"qui","word","question_words",0,0,0,0,0.01,0,0,0
+449,"quoi","word","question_words",0,0,0.04,0,0,0,0,0
+450,"aucun/ne","word","quantifiers",0,0,0,0,0,0,0,0
+451,"encore","word","quantifiers",0,0,0,0,0.06,0.04,0,0
+452,"le/la même","word","quantifiers",0,0,0,0,0,0,0,0
+453,"pas","word","quantifiers",0,0,0,0,0.01,0,0,0.2
+454,"tous/tout","word","quantifiers",0,0,0,0,0,0,0,0
+455,"un autre","word","quantifiers",0,0,0,0,0,0.04,0,0
+456,"un peu","word","quantifiers",0,0,0,0,0,0,0,0
+519,"bateau","word","vehicles",0,0,0,0,0.01,0,0,0
+520,"hélicoptère","word","vehicles",0,0,0,0,0,0,0,0
+521,"traîneau","word","vehicles",0,0,0,0,0,0,0,0
+522,"tracteur","word","vehicles",0,0,0,0,0,0,0,0
+523,"tricycle","word","vehicles",0,0,0,0,0,0,0,0
+524,"stylo","word","toys",0,0,0,0,0,0.04,0,0
+525,"jouet","word","toys",0,0,0,0,0,0,0,0
+526,"raquette","word","toys",0,0,0,0,0,0,0,0
+527,"craie","word","toys",0,0,0,0,0,0,0,0
+528,"jeu","word","toys",0,0,0,0,0,0,0,0
+529,"colle","word","toys",0,0,0,0,0,0,0,0
+530,"pâte à modeler","word","toys",0,0,0,0,0,0,0,0
+531,"cadeau","word","toys",0,0,0,0,0,0,0,0
+532,"puzzle","word","toys",0,0,0,0,0,0,0,0
+533,"histoire","word","toys",0,0,0,0,0,0,0,0
+534,"feutre","word","toys",0,0,0,0,0,0,0,0
+535,"crocodile","word","animals",0,0,0,0,0.02,0,0,0
+536,"fourmi","word","animals",0,0,0,0,0,0,0,0
+537,"renne","word","animals",0,0,0,0,0,0,0,0
+538,"coq","word","animals",0,0,0,0,0,0,0,0
+539,"loup","word","animals",0,0,0,0,0,0.04,0,0
+540,"zèbre","word","animals",0,0,0,0,0,0,0,0
+541,"petits pots","word","food_drink",0,0,0,0,0,0,0,0
+542,"thon","word","food_drink",0,0,0,0,0,0,0,0
+543,"kiwi","word","food_drink",0,0,0,0,0,0,0,0
+544,"compote","word","food_drink",0,0,0,0,0.01,0,0,0
+545,"haricot","word","food_drink",0,0,0,0,0,0,0,0
+546,"chocolat","word","food_drink",0,0,0,0,0,0,0,0
+547,"coca","word","food_drink",0,0,0,0,0,0,0,0
+548,"maïs","word","food_drink",0,0,0,0,0,0,0,0
+549,"beignet","word","food_drink",0,0,0,0,0,0,0,0
+550,"frites","word","food_drink",0,0,0,0,0,0,0,0
+551,"haricots verts","word","food_drink",0,0,0,0,0,0,0,0
+552,"chewing-gum","word","food_drink",0,0,0,0,0,0,0,0
+553,"hamburger","word","food_drink",0,0,0,0,0,0,0,0
+554,"glaçon","word","food_drink",0,0,0,0,0,0,0,0
+555,"vitamines","word","food_drink",0,0,0,0,0.01,0,0,0
+556,"bonbons","word","food_drink",0,0,0,0,0,0,0,0
+557,"confiture","word","food_drink",0,0,0,0,0,0,0,0
+558,"yaourt","word","food_drink",0,0,0,0,0,0,0,0
+559,"sucette","word","food_drink",0,0,0,0,0,0,0,0
+560,"melon","word","food_drink",0,0,0,0,0,0,0,0
+561,"madeleine","word","food_drink",0,0,0,0,0,0,0,0
+562,"noisettes","word","food_drink",0,0,0,0,0,0,0,0
+563,"crêpe","word","food_drink",0,0,0,0,0,0,0,0
+564,"nutella","word","food_drink",0,0,0,0,0,0,0,0
+565,"mayonnaise","word","food_drink",0,0,0,0,0,0,0,0
+566,"pop-corn","word","food_drink",0,0,0,0,0,0,0,0
+567,"esquimau","word","food_drink",0,0,0,0,0,0,0,0
+568,"pomme de terre","word","food_drink",0,0,0,0,0,0,0,0
+569,"chips","word","food_drink",0,0,0,0,0,0,0,0
+570,"bretzel","word","food_drink",0,0,0,0,0,0,0,0
+571,"flan","word","food_drink",0,0,0,0,0,0,0,0
+572,"courge","word","food_drink",0,0,0,0,0,0,0,0
+573,"raisins secs","word","food_drink",0,0,0,0,0,0,0,0
+574,"sel","word","food_drink",0,0,0,0,0,0,0,0
+575,"sandwich","word","food_drink",0,0,0,0,0,0,0,0
+576,"sauce","word","food_drink",0,0,0,0,0,0,0,0
+577,"limonade","word","food_drink",0,0,0,0,0,0,0,0
+578,"fraise","word","food_drink",0,0,0,0,0,0,0,0
+579,"vanille","word","food_drink",0,0,0,0,0,0,0,0
+580,"genouillère","word","clothing",0,0,0,0,0,0,0,0
+581,"aïe","word","body_parts",0,0,0,0,0.01,0.04,0,0
+582,"bobo","word","body_parts",0,0,0,0,0,0,0,0
+583,"cheville","word","body_parts",0,0,0,0,0,0,0,0
+584,"fesses","word","body_parts",0,0,0,0,0,0,0,0
+585,"menton","word","body_parts",0,0,0,0,0,0,0,0
+586,"lèvre","word","body_parts",0,0,0,0,0,0,0,0
+587,"pénis/zizi…","word","body_parts",0,0,0,0,0,0,0,0
+588,"vagin/zezette…","word","body_parts",0,0,0,0,0,0,0,0
+589,"cuisine","word","furniture_rooms",0,0,0,0,0.01,0,0,0
+590,"étendage","word","furniture_rooms",0,0,0,0,0,0,0,0
+591,"entrée","word","furniture_rooms",0,0,0,0,0,0,0,0
+592,"douche","word","furniture_rooms",0,0,0,0,0,0,0,0
+593,"pièce","word","furniture_rooms",0,0,0,0,0,0,0,0
+594,"cave","word","furniture_rooms",0,0,0,0,0,0,0,0
+595,"banc","word","furniture_rooms",0,0,0,0,0,0,0,0
+596,"wc","word","furniture_rooms",0,0,0,0,0,0,0,0
+597,"machine à laver","word","furniture_rooms",0,0,0,0,0.01,0,0,0
+598,"les courses","word","games_routines",0,0,0,0,0,0,0,0
+599,"goûter","word","games_routines",0,0,0,0,0,0,0,0
+600,"coup de fil","word","games_routines",0,0,0,0,0,0,0,0
+601,"top là","word","games_routines",0,0,0,0,0,0,0,0
+602,"je vais t'attraper","word","games_routines",0,0,0,0,0.01,0,0,0
+603,"va sur le pot","word","games_routines",0,0,0,0,0,0,0,0
+604,"tourne-toi","word","games_routines",0,0,0,0,0,0,0,0
+605,"ce petit cochon","word","games_routines",0,0,0,0,0,0,0,0
+606,"camping","word","places",0,0,0,0,0,0,0,0
+607,"cirque","word","places",0,0,0,0,0,0,0,0
+608,"campagne","word","places",0,0,0,0,0,0,0,0
+609,"Centre-ville","word","places",0,0,0,0,0,0,0,0
+610,"ferme","word","places",0,0,0,0,0,0,0,0
+611,"station service","word","places",0,0,0,0,0,0,0,0
+612,"cinéma","word","places",0,0,0,0,0,0,0,0
+613,"pique-nique","word","places",0,0,0,0,0,0,0,0
+614,"terrain de jeux","word","places",0,0,0,0,0,0,0,0
+615,"forêt","word","places",0,0,0,0,0,0,0,0
+616,"au sujet de","word","prepositions",0,0,0,0,0,0,0,0
+617,"au dessus de","word","prepositions",0,0,0,0,0,0,0,0
+618,"autour de","word","prepositions",0,0,0,0,0,0,0,0
+619,"à","word","prepositions",0,0,0,0,0,0,0,0
+620,"à côté de","word","prepositions",0,0,0,0,0,0,0,0
+621,"chez","word","prepositions",0,0,0,0,0,0,0,0
+622,"pour","word","prepositions",0,0,0,0,0,0,0,0
+623,"ici","word","prepositions",0,0,0,0,0,0,0,0
+624,"à l'intérieur de","word","prepositions",0,0,0,0,0,0,0,0
+625,"près de","word","prepositions",0,0,0,0,0,0,0,0
+626,"de","word","prepositions",0,0,0,0,0,0,0,0
+627,"au loin","word","prepositions",0,0,0,0,0,0,0,0
+628,"au sommet de","word","prepositions",0,0,0,0,0,0,0,0
+629,"par dessus","word","prepositions",0,0,0,0,0,0,0,0
+630,"vers","word","prepositions",0,0,0,0,0,0,0,0
+631,"avec","word","prepositions",0,0,0,0,0,0,0,0
+632,"le/la/les/quel(les)","word","question_words",0,0,0,0,0,0,0,0
+633,"aucun/e","word","quantifiers",0,0,0,0,0,0,0,0
+634,"un/une","word","quantifiers",0,0,0,0,0,0,0,0
+635,"plein/beaucoup","word","quantifiers",0,0,0,0,0,0,0,0
+636,"du/de la/des","word","quantifiers",0,0,0,0,0,0,0,0
+637,"chaque","word","quantifiers",0,0,0,0,0,0,0,0
+638,"autre","word","quantifiers",0,0,0,0,0.01,0,0,0
+639,"aussi","word","quantifiers",0,0,0,0,0,0,0,0
+640,"le/la/les","word","quantifiers",0,0,0,0,0,0,0,0
+641,"Il","word","pronouns",0,0,0,0,0,0,0,0
+642,"ses","word","pronouns",0,0,0,0,0,0,0,0
+643,"lui","word","pronouns",0,0,0,0,0,0,0,0
+644,"moi-même","word","pronouns",0,0,0,0,0,0,0,0
+645,"notre","word","pronouns",0,0,0,0,0,0,0,0
+646,"elle","word","pronouns",0,0,0,0,0,0,0,0
+647,"leur","word","pronouns",0,0,0,0,0,0,0,0
+648,"ces","word","pronouns",0,0,0,0,0,0,0,0
+649,"ils/elles","word","pronouns",0,0,0,0,0,0,0,0
+650,"ceux","word","pronouns",0,0,0,0,0,0,0,0
+651,"nous","word","pronouns",0,0,0,0,0,0,0,0
+652,"on","word","pronouns",0,0,0,0,0,0,0,0
+653,"toi-même","word","pronouns",0,0,0,0,0,0,0,0
+654,"après","word","time_words",0,0,0,0,0,0,0,0
+655,"avant","word","time_words",0,0,0,0,0,0,0,0
+656,"heure","word","time_words",0,0,0,0,0,0,0,0
+657,"hier","word","time_words",0,0,0,0,0,0,0,0
+658,"et","word","connecting_words",0,0,0,0,0,0,0,0
+659,"parce que","word","connecting_words",0,0,0,0,0,0,0,0
+660,"mais","word","connecting_words",0,0,0,0,0,0,0,0
+661,"si","word","connecting_words",0,0,0,0,0,0,0,0
+662,"donc","word","connecting_words",0,0,0,0,0,0,0,0
+663,"alors","word","connecting_words",0,0,0,0,0,0,0,0
+664,"rocher","word","outside",0,0,0,0,0,0,0,0
+665,"nuage","word","outside",0,0,0,0,0,0,0,0
+666,"drapeau","word","outside",0,0,0,0,0,0,0,0
+667,"herbe","word","outside",0,0,0,0,0,0,0,0
+668,"tuyau","word","outside",0,0,0,0,0,0,0,0
+669,"échelle","word","outside",0,0,0,0,0,0,0,0
+670,"tondeuse à gazon","word","outside",0,0,0,0,0,0,0,0
+671,"toit","word","outside",0,0,0,0,0,0,0,0
+672,"bac à sable","word","outside",0,0,0,0,0,0,0,0
+673,"trottoir","word","outside",0,0,0,0,0,0,0,0
+674,"bonhomme de neige","word","outside",0,0,0,0,0,0,0,0
+675,"arrosoir","word","outside",0,0,0,0,0,0,0,0
+676,"bâton","word","outside",0,0,0,0,0,0,0,0
+677,"pierre","word","outside",0,0,0,0,0,0,0,0
+678,"rue/route","word","outside",0,0,0,0,0,0,0,0
+679,"vent","word","outside",0,0,0,0,0.01,0,0,0
+680,"monsieur","word","people",0,0,0,0,0,0,0,0
+681,"clown","word","people",0,0,0,0,0,0,0,0
+682,"docteur","word","people",0,0,0,0,0,0,0,0
+683,"pompier","word","people",0,0,0,0,0,0,0,0
+684,"copain/ine","word","people",0,0,0,0,0,0,0,0
+685,"facteur","word","people",0,0,0,0,0,0,0,0
+686,"infirmière","word","people",0,0,0,0,0,0,0,0
+687,"police","word","people",0,0,0,0,0,0,0,0
+688,"nom de l'animal domestique","word","people",0,0,0,0,0.01,0.04,0,0
+689,"suis","word","helping_verbs",0,0,0,0,0,0,0,0
+690,"sont","word","helping_verbs",0,0,0,0,0,0,0,0
+691,"être","word","helping_verbs",0,0,0,0,0,0,0,0
+692,"est","word","helping_verbs",0,0,0,0,0,0,0,0
+693,"peux","word","helping_verbs",0,0,0,0,0,0,0,0
+694,"pourrait","word","helping_verbs",0,0,0,0,0,0,0,0
+695,"a fait","word","helping_verbs",0,0,0,0,0,0,0,0
+696,"faire","word","helping_verbs",0,0,0,0,0,0,0,0
+697,"fait","word","helping_verbs",0,0,0,0,0,0,0,0
+698,"ne pas","word","helping_verbs",0,0,0,0,0,0,0,0
+699,"devoir faire","word","helping_verbs",0,0,0,0,0,0,0,0
+700,"avoir à faire","word","helping_verbs",0,0,0,0,0,0,0,0
+701,"laisse-moi","word","helping_verbs",0,0,0,0,0,0,0,0
+702,"avoir besoin de","word","helping_verbs",0,0,0,0,0,0,0,0
+703,"essayer de","word","helping_verbs",0,0,0,0,0,0,0,0
+704,"vouloir","word","helping_verbs",0,0,0,0,0,0,0,0
+705,"était","word","helping_verbs",0,0,0,0,0,0,0,0
+706,"panier","word","household",0,0,0,0,0,0,0,0
+707,"seau","word","household",0,0,0,0,0,0,0,0
+708,"ordures","word","household",0,0,0,0,0,0,0,0
+709,"pot","word","household",0,0,0,0,0,0,0,0
+710,"couteau","word","household",0,0,0,0,0,0,0,0
+711,"serpillière","word","household",0,0,0,0,0,0,0,0
+712,"clou","word","household",0,0,0,0,0,0,0,0
+713,"serviette de table","word","household",0,0,0,0,0,0,0,0
+714,"cassette","word","household",0,0,0,0,0,0,0,0
+715,"mouchoir","word","household",0,0,0,0,0,0,0,0
+716,"plateau","word","household",0,0,0,0,0,0,0,0
+717,"trotteur","word","household",0,0,0,0,0,0,0,0
+718,"coussins","word","household",0,0,0,0,0,0,0,0
+719,"sac","word","household",0,0,0,0,0,0,0,0
+720,"être réveillé","word","descriptive_words",0,0,0,0,0,0,0,0
+721,"mieux","word","descriptive_words",0,0,0,0,0,0,0,0
+722,"noir","word","descriptive_words",0,0,0,0,0,0,0,0
+723,"marron","word","descriptive_words",0,0,0,0,0,0,0,0
+724,"premier/ère","word","descriptive_words",0,0,0,0,0,0,0,0
+725,"plein/ne","word","descriptive_words",0,0,0,0,0,0,0,0
+726,"vert/e","word","descriptive_words",0,0,0,0,0,0,0,0
+727,"lourd/e","word","descriptive_words",0,0,0,0,0,0,0,0
+728,"haut/e","word","descriptive_words",0,0,0,0,0,0,0,0
+729,"dernier/e","word","descriptive_words",0,0,0,0,0,0,0,0
+730,"long/ue","word","descriptive_words",0,0,0,0,0,0,0,0
+731,"fort/e","word","descriptive_words",0,0,0,0,0,0,0,0
+732,"fou/folle","word","descriptive_words",0,0,0,0,0,0,0,0
+733,"neuf/ve","word","descriptive_words",0,0,0,0,0,0,0,0
+734,"bruyant/e","word","descriptive_words",0,0,0,0,0,0,0,0
+735,"orange","word","descriptive_words",0,0,0,0,0,0,0,0
+736,"tranquille","word","descriptive_words",0,0,0,0,0,0,0,0
+737,"triste","word","descriptive_words",0,0,0,0,0,0,0,0
+738,"lent/e","word","descriptive_words",0,0,0,0,0,0,0,0
+739,"collant/e","word","descriptive_words",0,0,0,0,0,0,0,0
+740,"minuscule","word","descriptive_words",0,0,0,0,0,0,0,0
+741,"blanc/he","word","descriptive_words",0,0,0,0,0,0,0,0
+742,"venteux","word","descriptive_words",0,0,0,0,0,0,0,0
+743,"jaune","word","descriptive_words",0,0,0,0,0,0,0,0
+744,"coquin/e","word","descriptive_words",0,0,0,0,0.01,0.04,0,0
+745,"coincé","word","descriptive_words",0,0,0,0,0,0,0,0
+746,"finir recevoir","word","action_words",0,0,0,0,0,0,0,0
+747,"donner aller","word","action_words",0,0,0,0,0.02,0,0,0
+748,"construire","word","action_words",0,0,0,0,0,0,0,0
+749,"acheter","word","action_words",0,0,0,0,0,0,0,0
+750,"porter","word","action_words",0,0,0,0,0,0,0,0
+751,"attraper","word","action_words",0,0,0,0,0,0,0,0
+752,"courir après","word","action_words",0,0,0,0,0.01,0,0,0
+753,"faire bravo","word","action_words",0,0,0,0,0.05,0,0,0
+754,"sécher","word","action_words",0,0,0,0,0,0,0,0
+755,"déposer","word","action_words",0,0,0,0,0,0,0,0
+756,"trouver","word","action_words",0,0,0,0,0,0,0,0
+757,"aller bien avec","word","action_words",0,0,0,0,0,0,0,0
+758,"réparer","word","action_words",0,0,0,0,0,0,0,0
+759,"détester","word","action_words",0,0,0,0,0,0,0,0
+760,"avoir","word","action_words",0,0,0,0,0,0,0,0
+761,"entendre","word","action_words",0,0,0,0,0,0,0,0
+762,"cacher","word","action_words",0,0,0,0,0.01,0,0,0
+763,"tenir","word","action_words",0,0,0,0,0.02,0.04,0,0
+764,"couper","word","action_words",0,0,0,0,0,0,0,0
+765,"frapper à la porte","word","action_words",0,0,0,0,0,0,0,0
+766,"lécher","word","action_words",0,0,0,0,0,0,0,0
+767,"aimer bien","word","action_words",0,0,0,0,0,0,0,0
+768,"écouter","word","action_words",0,0,0,0,0.01,0.04,0,0
+769,"faire","word","action_words",0,0,0,0,0,0,0,0
+770,"ramasser","word","action_words",0,0,0,0,0.01,0,0,0
+771,"faire de la peinture","word","action_words",0,0,0,0,0,0,0,0
+772,"renverser","word","action_words",0,0,0,0,0,0,0,0
+773,"verser","word","action_words",0,0,0,0,0,0,0,0
+774,"faire semblant","word","action_words",0,0,0,0,0,0,0,0
+775,"goutter","word","action_words",0,0,0,0,0,0,0,0
+776,"déchirer","word","action_words",0,0,0,0,0,0,0,0
+777,"secouer","word","action_words",0,0,0,0,0,0,0,0
+778,"partager","word","action_words",0,0,0,0,0,0,0,0
+779,"s'asseoir","word","action_words",0,0,0,0,0.01,0,0,0
+780,"faire du patin","word","action_words",0,0,0,0,0,0,0,0
+781,"glisser","word","action_words",0,0,0,0,0,0,0,0
+782,"travailler","word","action_words",0,0,0,0,0,0,0,0
+783,"souhaiter","word","action_words",0,0,0,0,0,0,0,0
+784,"être debout","word","action_words",0,0,0,0,0.01,0,0,0
+785,"rester","word","action_words",0,0,0,0,0,0,0,0
+786,"balayer","word","action_words",0,0,0,0,0,0,0,0
+787,"parler","word","action_words",0,0,0,0,0,0,0,0
+788,"goûter","word","action_words",0,0,0,0,0,0,0,0
+789,"arracher","word","action_words",0,0,0,0,0,0,0,0
+790,"penser","word","action_words",0,0,0,0,0,0,0,0
+791,"attendre","word","action_words",0,0,0,0,0.02,0,0,0
+792,"se réveiller","word","action_words",0,0,0,0,0,0,0,0
+793,"couvrir","word","action_words",0,0,0,0,0,0,0,0
+794,"grimper","word","action_words",0,0,0,0,0,0,0,0
+795,"cuisiner","word","action_words",0,0,0,0,0,0,0,0

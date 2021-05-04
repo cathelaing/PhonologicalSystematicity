@@ -1,0 +1,855 @@
+---
+title             : "Systematicity in early phonological development"
+shorttitle        : "Systematicity in early phonological development"
+
+author: 
+  - name          : "Catherine Laing"
+    affiliation   : "1"
+    corresponding : yes    # Define only one corresponding author
+    address       : "Centre for Language and Communication Research, School of English, Communication and Philosohpy, Cardiff University, Colum Drive, Cardiff, UK, CF10 3EU"
+    email         : "catherine.laing@cardiff.ac.uk"
+
+affiliation:
+  - id            : "1"
+    institution   : "Cardiff University, Cardiff, UK"
+
+
+authornote: |
+ # Add complete departmental affiliations for each author here. Each new line herein must be indented, like this line.
+
+  This paper is currently in progress; please do not share or cite.  
+
+abstract: |
+  ADD ABSTRACT 
+  
+  <!-- https://tinyurl.com/ybremelq -->
+  
+keywords          : "Systematicity, Phonological development, templates, cluster analysis"
+wordcount         : "X"
+
+bibliography      : ["Systematicity.bib"]
+
+floatsintext      : no
+figsintext        : yes 
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+linenumbers       : yes
+mask              : no
+draft             : no
+
+documentclass     : "apa6"
+classoption       : "man"
+output            : papaja::apa6_pdf
+---
+
+```{r setup, include = FALSE}
+
+## ADD SET UP CODE ##
+
+library(papaja)
+library(tidyverse)
+library(dplyr)
+library(tibble)
+library(lmerTest)
+library(afex)
+library(citr)
+
+# source("DataGathering.R")
+# source("Tables.R")
+
+
+stat_sum_df <- function(fun, geom="crossbar", ...) {
+  stat_summary(fun.data = fun, colour = "red", geom = geom, width = 0.2, ...)
+}
+```
+
+
+
+words may be ordered in categories, or neighbourhoods, of phonologically-similar words [Luce & Pisoni, 1998]. Phonologically dense neighbourhoods, which have many similar-sounding words (words that differ in only one phoneme, such as **cat**, **hat**, **cap**, **kit**, and so on), present a higher number of lexical competitors to tasks of production and perception, and studies have shown competing evidenve for an inhibitory [REF] and facilitative [REF] effect for denser neighbourhoods in perception and production tasks amongst adults. Research on child populations is more limited, but suggests that infants may benefit from denser phonological neighbourhoods in word learning after only a brief exposure in a novel word-learning paradigm [Hollich et al 2002]. 
+
+Luce and Pisoni [1998] reveal an inhibitory effect for denser phonological neighbourhoods. They show that... . On the other hand, Vitevich [2002] finds a facilitative effect, which he proposes may be due to the co-activation of multiple items during perception and production tasks, which may make it easier to retrieve a word more quickly and more accurately. 
+
+Bottom-up, rather than top-down approach
+Studies talk about acquisition of mental lexicon, but we know that infants know a lot more about language than they can actually produce (competence vs. performance). 
+
+Useful refs: FOurtassi et al 2018; Stokes, 2014; Jones & Brandt, 2020; Jones, 2020; Hills et al 2009
+
+Fourtassi et al, 2018:
+
+PAT (preferential attachment) = rich get richer; infants acquire things that match existing things - **internal** connectivity (Steyvers & Tenenbaum, 2005; Barabasi & Albert, 1999). New forms are acquired in line with the existing nodes that have the highest degree
+PAC (preferential acquisiion) = infants acquire things that are represented in the learning environment (Hills et al., 2009). New nodes are acquired according to the number of links with different existing nodes in the network (see Figure 1).
+
+F et al expand current research by adding phonological, rather than just semantic, data to the question of networks in early acquisition.
+Only looked at ages 16-36m, only did noun acquisiion. Phon networks: used Levenstein distance of target IPA production. I need to think about how to define closeness vs. distance of 2 words; they used edit distance of 1 or 2; what is the equivalent in Euclidean distances? 2 nodes are related if distance == 1 or 2. "degree" represents connectivity - the number of words shared with other words.
+
+Need a static (target) global network - F et al use words acquired by 30m, but I could use distance between target phonetic forms - proxy for connectivity in the learning environment
+
+Results show that words with higher phonological connectivity (higher degree) are learned earlier. I could represent this by plotting connectivity in relation to session/age, but plot only those words that have an edit distance that suggests reasonably accurate production (need to think about this in relation to my data). This kind of evidence supports PAC.
+
+Power-law degree districution supports PAC. There is an R package that can deal with this, but I need to look into it some more.
+
+Model predicts a role for PAC over PAT for phon and semantic data, but the PAT model is more convincing than PAC for phon. Phon network is stronger across languages.
+
+
+Hills et al 2009: Pref attachment vs pref acquisition. Found that pref acq accounted for learning of words based on semantic networks. Also found that PND predicted a word's AOA. Note that this paper is about learning, but doesn't consider infants' actual productions (only the words they know/produce by a given age). Authors state that "the next step is to longitudinally examine developing networks in individual children."
+
+
+Stella, Beckage, & Brede, 2017: in the very early learning stage (19-20m) "the network appears to contain little information relevant for predicting acquisition." In the early learning stage (20-23m), word length is a predictor of AoA - shorter words are acquired earlier. Authors propose that this is because "short words are easier to memorise and learn". Word length is no longer predictive of AoA in later stages of learning. The authors state that in the early staes of learning (the first 2 years), it may not be possible to identify patterns in this kind of data because children are still trying to figure out a learning strategy (Beckage et al 2015 - actually this proposal is from this ref, not Stella et al). In their model, phon distance had a negligible effect on AoA, but PND is relevant in the VELS. This becomes irrelevant in later development. The authors conclude that the best model to predict acquisition changes over the course of development. In the very early stage (up to 20m) all but the phonological layer contributed to acquisition. 
+
+Beckage et al: analysis of phonological networks shows phonological systematicity in development (based on normative CDI data) after ~20m. They state that "The normative vocabularies may not capture any individual child very well, but capture the aggregate instead." The authors state that this will dilute the effects of any trneds in semantic network growth (i.e. children's preferences for different categories, such as animals or vehicles - will be averaged out as 'random' across children unless all children show the same peference for the same category) but not phon network growth becuase of universality in the order of phoneme acquisition. This is obviously not the case.
+
+Vitevitch, 2008.
+Stella, M. & Brede, M. (2015).
+Stella, M. & Brede, M. 2014 219–229 (Springer International Publishing, 2016).
+Vitevitch, M. S., Chan, K. Y. & Roodenrys, S.
+
+Dautriche et al., 2015
+
+Need to talk a bit about pref attachment vs. pref acq because pref attachment really relates to everything i say below, yet it looks like most recent papers in this area present a more compelling case for pref acq.
+
+
+
+###############################
+
+A wide body of literature spanning decades of work on phonological development notes the systematic nature of infants' earliest words. Studies of the phonetic properties, phonological structures, and (more recently) tonal characteristics of infants' word productions show that many of a child's first word forms share similar characteristics. Infants appear to draw on what they know: when articulatory, memory and planning capacities are simultaneously limited in early development, it is proposed that infants draw on a "phonic core of remembered lexical items and articulations" [Ferguson & Farwell, 1975/2013, p.112] in order to deal with the challenges involved in developing an early lexicon. Vihman [2019, p.263] describes early word acquisition as "an emergent network of related forms" which reveals an inherent systematicity in infants' early-established lexicon. Recent studies have used quantitative methods to demonstrate this systematicity within a child's developing lexicon [Vihman, Laing], but work in this area has largely focused on the phonological (or **prosodic**; see [Vihman, 2019, p.37]) structures of these forms across a limited period of development. In this study, I present a longitudinal analysis of lexical development across five American infants to identify changes in systematicity in the first three years. Here I consider the phonological characteristics of the developing lexicon to demonstrate how early systematicity may be integral to the developing linguistic system, supporting infants to acquire the requisite capacity required for flexible, automatic and accurate word production.
+
+Waterson [1971] was the first to observe systematic output patterns in early production. In a case study of her son's early words, she noted the striking presence of systematicity in his lexicon at 18 months. She details a number of systematic structures that share common segments and features, referred to by Waterson (1971) as 'schema'. For example, the 'nasal structure' systematically adapts /n/-medial forms including **finger**, **window** and **another** to a reduplicated schema with a palatal nasal stop [ɲ] at syllable onset [ADD EXAMPLES]. Waterson refers to these schemas in relation to the segments that define them - labial structure, continuant structure, sibilant structure, and nasal structure - but also describes the syllabic structure of each schema, which is in some cases fixed (e.g. VHV for the continuant structure, i.e. [ADD EXAMPLE]) and other cases variable (e.g. VC or CVC for the sibilant structure, i.e. [ADD EXAMPLE]). She posits that schemas come about through the child's perception of salient features in the adult form, which, crucially, are already in the child's own productive repertoire. As Waterson put it, these forms come about through "the child's limited perception of the adult forms and the operation of his (sic) own phonological system which results from his limited perception and limited ability to produce certain features and combinations of features" [1971/2013, p.79]. According to Waterson, schemas relate holistically to the adult target [see also Vihman, 2019], based on salient and reproducible features of the input form. 
+
+Since Waterson's landmark study, a rich body of work has developed with the aim of identifying systematic schemas in infants' early words. Most notably, Vihman's [2014; 2019] work on phonological templates has established evidence to present a compelling theory of early phonological development. In Vihman's model, the child begins with a small lexicon of phonologically-simple and accurately-produced forms. In this sense, early words tend to look similar across children [ADD REF], with room for ambient language effects [ADD REF]. Vihman proposes that these early words are 'selected' for their ease of production and perceptual salience. As the lexicon grows, the child begins to draw on a limited set of production patterns (or **schemas**, in Waterson's terminology); these may differ in phonetic detail, but exhibit largely the same **prosodic structure** [^1]. Notably, and contrary to Waterson's approach, prosodic structures are not defined by any specific segmental content; they constitute consonant and vowel combinations such as the open CV syllable, or the open disyllable VCV, or structures with broader harmony patterns such as consonant harmony and reduplication. Whereas earlier forms were **selected** for their accessible structure, as these production patterns become more dominant within the child's lexicon, target forms that do not necessarily fit these structures are **adapted**. As an example, early data from a child known as Alice [Vihman et al., 1994] shows the use of the open CV syllable in the production of a number of forms at 9-10 months, which occur with some accuracy, and are thereby **selected** for production [ADD EXAMPLES - see Vihman 2019 p.63-69].  By 16 months she continues to select words to fit this structure, but is also **adapting** forms that do not naturally fit [ADD EXAMPLES]. When a structure is implemented with specific segmental content, for example [ADD EXAMPLES FROM DATA], it is said to be a **template**.
+
+Implementation of production patterns and templates - through both selection and adaption - indicates the presence of systematicity within the developing lexicon. The constraints on infants' production are high - whether for reasons of articulation, memory, planning, perception, or a combination of these - and so they draw on a limited set of vocal outputs that represent a growing number of target words. Essentially, the new target form is allocated to one of a small number of motoric categories, and as these categories increase in size, the structure or template becomes further entrenched. [cite Kapatsinsky as well] For example, in data from their bilingual (English-Spanish) daughter’s early word acquisition, Deuchar and Quay [2000] show that 13 of her first 20 words are produced with a CV structure, and many words are phonologically identical: she produces **car**, **clock**, **casa** ‘house’ and **cat** as /ka/, and **papa** ‘daddy’, **pájaro** ‘bird’ and **panda** as /pa/. These examples demonstrate how the child draws on a systematic production routine to produce a range of words, identifiable only through the word-intial segment in both child and target form. This is typical of earlier development; eventually the system will expand as the child develops sufficient phonological capacity to produce a wider variety of segments and structures. 
+
+Such systematicity is observed in the developing lexicons of infants acquiring a range of languages. Through identifying the common structures and templates in a child's output forms[^2], we gain insight into their production capacity (in relation to both syllabic and segmental content) combined with the ambient language influence. Some structures are observed cross-linguistically, while others are more common amongst learners of specific languages, or idiosyncratic to the child in question. For example, consonant harmony and the open CV syllable have been proposed as ubiquitous in the early lexicon, possibly due to their resemblance with canonical babble [Laing, 2019]. Indeed, all five bilingual infants studied by Vihman [2016] use both consonant harmony and CV structures as dominant forms in their first 100 words, while Laing's [2019] analysis of 16 infants acquiring a range of languages found a dominant consonant harmony structure in all infants' early words; only one of the 16 infants did not use a CV structure in high quantities. On the other hand, typological differences can be observed in infants' early productions. In a cross-linguistic comparison, Vihman [2019] observes, for example, a high occurrence of VCV structures in Finnish infants' early words (4/5 infants produced this structure in high proportions in the early words), which may result from the common occurrence of salient word-medial geminates in Finnish. In comparison, only one Estonian infant and no American/British infants - languages with few geminates - produced this structure, reflecting a typological influence on infants' early word production. Templates may be more idiosyncratic, specific to a single child, such as Priestly's [1977] son Christopher, who had a /j/-medial template: for example the child produced **banana** as [ADD], **candle** as [ADD], and **farmer** as [ADD] [see Vihman, 2019, Appendix II] [^3].
+
+We could consider systematicity in early phonological development in relation to work on the effect of phonological neighbourhood density (PND) in adults as well as children. In experimental work with adult participants, words that belong to a denser neighbourhood of similar-sounding words (i.e. words with more phonological neighbours - defined as words that differ through only one phoneme substitution) may be easier to retrieve from the mental lexicon, leading to a facilitative effect for more similar-sounding words in both perception and production [Vitevich, 2002]. Vitevich [2002] proposes that this is due to the joint activation of words in dense phonological neighbourhoods (when **cat** is activated, so too are **vat**, **bat**, **cap** and **kit**, whereas **velcro** does not have many co-activated forms), making these forms easier to retrieve and thereby recognise or produce quickly and accurately. In studies of PND effects in the developing lexicon, there appears to be an advantage for denser phonological neighbourhoods in the productive vocabulary [Coady & Aslin, 2003; Jones & Brandt, 2019; Storkel, 2004]. Charles-Luce and Luce [1995] found the opposite effect for receptive vocabulary, whereby the PND of words in children's receptive lexicons was **sparser** in early development when compared with an adult lexicon, though Jones & Brandt's [2019] analysis found no effect for receptive vocabulary on PND. Together these results suggest that, at least in terms of early production, children's early words draw from "more frequent sounds and sound combinations" [Coady & Aslin, 2004, p.??], which are likely to facilitate the establishment of memory representations of these forms and thereby allow more accurate or accessible production earlier on [Jones & Brandt, 2019]. Over time, as phonological working memory develops, children may no longer need to rely on a specific subset of phonologically-memorable and -accessible words, and can begin to acquire a broader range of phonologically-variable forms. This is particularly relevant to early production where infants must memorise, plan and then realise a given word form; denser phonological neighbourhoods earlier on may support establishment of a producible lexicon, whereby early words are more similar to one another, and become more variable over time. 
+
+What the work cited above refers to as phonological neighbourhood density may also be understood as systematicity within a phonological network. By network, I refer here to a web of forms (or **nodes**, in network terms) that are interconnected based on shared similar properties. In the given context these are phonological properties, but could also be semantic, or indeed non-linguistic properties such as genetic information, social connections or location [see Bell et al., 2017, for a review]. Network growth models allow analysis of changes within a system over time, and two key models[^3] of development have been proposed for lexical acquisition: preferential attachment (hereafter *PAT*) and preferential acquisition (hereafter *PAQ*) [Hills et al., 2009]. PAT models of network growth propose a rich-get-richer scenario, whereby the most highly-connected nodes (nodes with more **edges**) in the network attract new nodes at any given time-point. In phonological development terms, this model implies that the lexicon will constitute clusters of similar-sounding words (i.e. dense phonological neighbourhoods), and that a child is more likely to acquire new words that attach to these dense clusters. PAT-like growth is therefore driven by the **internal** linguistic system. On the other hand, PAQ-like growth assumes that forms in the learning environment that are similar to a higher number of nodes in the existing network will be acquired first. PAQ models of network growth thus assume that **external** factors in the learning environment influence acquisition - that is, that words that are well-connected to one another within the target language will be acquired earlier - and we can assume that for phonological development this would mean higher variability in the developing lexicon (i.e. sparser phonological neighbourhoods) with relatively consistent clustering across the network.
+
+A number of studies have drawn on network growth models to test whether PAT- and PAQ-like growth[^4] can explain lexical development in semantic and phonological networks of acquisition. Hills and colleagues' [2009] study of semantic networks showed evidence for PAQ, but not PAT, in associative networks of normed vocabulary acquisition data. Amatuni and Bergelson [2017] support this evidence for PAQ-like growth in semantic networks with an analysis of a large-scale corpus of input data, combined with normed productive vocabulary data derived from WordBank [Frank et al., 2016]. More recent work has applied these same approaches to phonological data: Fourtassi, Bian and Frank [2020] analyse both phonological and semantic network growth from vocabulary norms (receptive and productive) in 10 languages to find consistent evidence in support of PAQ-like growth, for both phonological and semantic networks, receptive and productive vocabularies, and across the 10 languages included in their analysis. In contrast, Siew and Vitevitch [2020] tested phonological networks in acquisition of older Dutch- and English-learning children (age 3-9 years), again using vocabulary norms to indicate age of acquisition for each word. Their analysis of PAT and PAQ growth models revealed contrasting findings for English and Dutch, as well as an age effect: PAT growth models predicted acquisition in English, but not Dutch, whereas both PAT and PAQ (as well as a third model not discussed here) predicted word learning in Dutch. Regarding the effect of age, higher PAT values (indicating *more* densely-connected clusters of similar forms) predicted acquisition earlier on in development, while later-acquired words tended to favour lower PAT values (i.e. words were less similar to existing words in the network). Siew and Vitevitch [2020] interpret this finding as showing that, in earlier development, children favour acquisition of words that are more similar to words in their existing lexicon, as this may support the learning and remembering of novel items. Later on in development, words that are more easily-differentiable from those in the existing lexicon become easier to learn and remember; the lexicon may reach a 'tipping point', whereby there is a processing cost involved with having too much similarity within the network.
+
+Together these studies present an interesting intersection of evidence for the role of PAT and PAQ models of growth in phonological networks. However, vocabulary norming data presents a somewhat idealistic model of acquisition, which does not reflect the realities of *production* in early phonological development. The phonological networks analysed in Fourtassi and colleagues [2020] and Siew and Vitevitch [2020] reveal connectivity between target forms in the child's vocabulary, but do not take into account the limitations of production in early development. While these findings present compelling evidence to show how target representations of words may be stored and accessed in the developing lexicon, they do not show how the limitations on early production affect infants' developing lexicons. Of course, lexical development is not determined only by the selecting of words to produce, but also by production of those words. The phonological network analyses reported in the literature thus tell only one part of the story. In this paper, I bring together analyses of phonological networks of both *target* and *actual forms* in order to consider systematicity in the early lexicon in regard to which words are selected for production, and how these words are produced by the child. 
+
+# Hypotheses
+
+In what follows, I will analyse the phonological structures within infants' lexical networks over the first three years of development, which is assumed to index phonological systematicity (and changes in systematicity) across the early lexicon. Two sets of networks will be established for each infant: one tracing connections between infants' actual word productions, the other between the target productions of these forms. Analysis of target forms presents a means of replicating previous analyses of phonological networks in development [Fourtassi et al., 2020; Siew & Vitevitch, 2020], though using real production data as oppose to vocabulary norms. Network analysis will map out systematicity in the developing lexicon via consideration of PAT- and PAQ-like network growth. Following findings from the past 50 years of phonological development research [Waterson, 1971; Vihman, 2019, among others], it is expected that infant's early words will show high phonological systematicity - that is, networks will constitute dense clusters of phonologically-similar forms. This would present evidence for a PAT-like model of network growth. I will draw on approaches outlined in Fourtassi et al. [2020] and Siew and Vitevitch [2020] to test the following specific hypotheses:
+
+1) Early phonological networks reflect a PAT-like model of growth when infants' actual productions are analysed.
+
+2) Stronger systematicity will be observed earlier in development, as infants select and then adapt words to match their preferred output forms [Vihman, 2019]. Evidence for PAT-like growth should therefore be stronger in earlier development.
+
+3) Infants' actual productions will be more systematic (i.e. more connections within the developing network) than target productions, showing stronger evidence for PAT-like growth over the course of development.
+
+To test these hypotheses, I will analyse a corpus of home-recorded data from 5 infants acquiring American English. Phonological networks will be established for each individual infant, whereby phonoloigcal distance is calculated between each word and each other word. Following Siew and Vitevitch [2020] and Fourtassi and colleagues [2020], network analyses using logistic regression and model comparisons will determine whether acquisition of actual and target forms reflects PAT- or PAQ-like growth in early phonological development.
+
+# Methods
+
+
+## Participants
+
+
+## Materials
+
+
+## Procedure
+
+
+ 
+
+## Input measures
+
+
+# Results
+
+```{r Production overview}
+
+nowords <- SiblingsData %>% filter(month == 18 & Total.words == 0) %>% tally()
+Nwords <- SiblingsData %>% filter(month == 18) %>% summarise(meanwords = mean(Total.words, na.rm=T),
+                                                             sdwords = sd(Total.words, na.rm=T),
+                                                             mdnwords = median(Total.words, na.rm=T))
+
+Nsibs <- SiblingsData %>% filter(month == 18) %>% summarise(meansibs = mean(Siblings6),
+                                                             sdsibs = sd(Siblings6),
+                                                             mdnsibs = median(Siblings6))
+
+```
+
+```{r Outliers, include=FALSE}
+
+# In overall vocabulary development
+
+CDI %>% filter(month == 18) %>%
+  mutate(outlier = (Total.words > 
+                      (mean(Total.words, na.rm=T) + 
+                         3*(sd(Total.words, na.rm=T))) |
+                      Total.words <
+                      (mean(Total.words, na.rm=T) - 
+                         3*(sd(Total.words, na.rm=T))))) %>%
+  filter(outlier == TRUE)
+
+# month 10: 521, 749, 342
+# month 11: 521, 342
+# month 13: 794
+# month 14: 794
+# month 15: 794
+# month 16: 794
+# month 17: 794
+# month 18: 794
+
+## Remove 794 from analysis
+
+SiblingsData <- SiblingsData %>% filter(subj != 794 & !month %in% c("06", "07", "08", "09"))
+CDI <- CDI %>% filter(subj != 794)
+speaker.type <- speaker.type %>% filter(subj != 794 & !month %in% c("06", "07", "08", "09"))
+object.presence <- object.presence %>% filter(subj != 794 & !month %in% c("06", "07", "08", "09"))
+in.cdi <- in.cdi %>% filter(subj != 794 & !month %in% c("06", "07", "08", "09"))
+
+females <- SiblingsData %>% filter(month == 18 & sex == "F") %>% tally()
+
+source("Figures.R")
+```
+
+
+
+Vocabulary development was highly variable across the 44 infants. By 18 months, `r nowords` infants produced no words, while mean productive vocabulary was `r Nwords$meanwords` words (SD=`r Nwords$sdwords`, Mdn=`r Nwords$mdnwords`). One female infant had a substantially larger reported vocabulary (3SDs above the mean montly vocabulary score) between 1;1 and 1;6 and was classed as an outlier. We removed her from our data, leaving 43 infants (`r females` females) in the present analysis. Infants had one sibling on average (M=`r Nsibs$meansibs`, Mdn=`r Nsibs$mdnsibs`, SD=`r Nsibs$sdsibs`). See Table \@ref(tab:table-sibling-number).
+
+
+``` {r table-sibling-number, comment=F, message=F, warning = F, echo = F, results = "asis"}
+cap = "Sibling number by female and male infants."
+apa_table(table.sibling.number, caption = cap, col_spanners = NULL, digits = 0, placement = "H", font_size = "small")
+```
+
+## Model structure for fixed and random effects 
+
+```{r effects of age sex and mot edu on infant production, message=FALSE, warning=FALSE, include=FALSE}
+
+# age
+
+age.test.cdi <- lmer(Log.Totalwords ~ month + (1|subj), data = SiblingsData, REML=FALSE)
+age.test.cdi.null <- lmer(Log.Totalwords ~ (1|subj), data = SiblingsData, REML=FALSE)
+
+age.test.cdi_anova <- anova(age.test.cdi, age.test.cdi.null) %>% # Strong effect for age - include in all further models
+    rename("pval" = `Pr(>Chisq)`)
+
+age.test_df <- age.test.cdi_anova$`Chi Df`[2]
+age.test_chisq <- age.test.cdi_anova$Chisq[2]
+age.test_p.value <- age.test.cdi_anova$pval[2]
+
+age.test.video.tokens <- lmer(Log.tokens_video ~ month + (1|subj), data = SiblingsData, REML=FALSE)
+age.test.video.tokens.null <- lmer(Log.tokens_video ~ (1|subj), data = SiblingsData, REML=FALSE)
+
+age.test_anova <- anova(age.test.video.tokens, age.test.video.tokens.null) %>% # Strong effect for age - include in all further models
+    rename("pval" = `Pr(>Chisq)`)
+
+# sex
+
+sex.test.cdi <- lmer(Log.Totalwords ~ sex + month + (1|subj), data = SiblingsData, REML=FALSE)
+sex.test.cdi.null <- lmer(Log.Totalwords ~ month + (1|subj), data = SiblingsData, REML=FALSE)
+
+sex.test_anova <- anova(sex.test.cdi, sex.test.cdi.null) %>%  # No overall effect for sex
+  rename("pval" = `Pr(>Chisq)`)
+
+sex.test_df <- sex.test_anova$`Chi Df`[2]
+sex.test_chisq <- sex.test_anova$Chisq[2]
+sex.test_p.value <- sex.test_anova$pval[2]
+
+sex.test.cdi <- lmer(Log.Totalwords ~ sex + month + (1|subj), data = SiblingsData, REML=FALSE)
+sex.test.cdi.null <- lmer(Log.Totalwords ~ month + (1|subj), data = SiblingsData, REML=FALSE)
+
+sex.test_anova <- anova(sex.test.cdi, sex.test.cdi.null) %>%  # No overall effect for sex
+  rename("pval" = `Pr(>Chisq)`)
+
+```
+
+```{r age_mom-Sibling correlation, message=TRUE, warning=FALSE}
+
+cor.age <- cor.test(
+  x = subset(SiblingsData, month == 18)$Siblings18
+  , y = subset(SiblingsData, month == 18)$age_mom
+  , method = "spearman"
+)
+
+cor.edu <- cor.test(
+  x = subset(SiblingsData, month == 18)$Siblings18
+  , y = subset(SiblingsData, month == 18)$MOTedulevel
+  , method = "spearman"
+)
+
+cor.edu.vocab <- cor.test(
+  x = subset(SiblingsData, month == 18)$Total.words
+  , y = subset(SiblingsData, month == 18)$MOTedulevel
+  , method = "spearman"
+)
+
+cor.vocab <- cor.test(
+  x = subset(SiblingsData, month == 18)$Siblings18
+  , y = subset(SiblingsData, month == 18)$Total.words
+  , method = "spearman"
+)
+
+cor.age.vocab <- cor.test(
+  x = subset(SiblingsData, month == 18)$Total.words
+  , y = subset(SiblingsData, month == 18)$age_mom
+  , method = "spearman"
+)
+
+```
+
+All reported models were generated in R [@r_core_team_r_2019] using the *lmerTest* packacge to run linear mixed-effects regression models [@kuznetsova_lmertest_2017]. P-values were generated by likelihood ratio tests resulting from nested model comparison. All models include infant as a random effect. All post-hoc tests are two-sample, two-tailed Wilcoxon Tests, given the underlying non-parametric nature of our variables. 
+
+Before considering sibling status, we first modelled infants’ productive vocabulary as a function of age, sex, and mother’s education. There was no effect for sex on productive vocabulary at 18 months (*p*=`r printp(sex.test_p.value)`), and no correlation with mothers' education level (across five categories from High School to Doctorate; *r* = `r round(cor.edu$estimate,3)`, *p*=`r printp(cor.edu.vocab$p.value)`). As expected, age had a significant effect on productive vocabulary (*p*`r printp(age.test_p.value)`), and so we include age as a fixed effect in all subsequent models. Because we expected that maternal age and education might have an effect on both sibling number and infant productive vocabulary, we ran further correlations to test these variables. There was no correlation between mother’s education and number of siblings (*r* = `r round(cor.edu$estimate,3)`, *p*=`r printp(cor.edu$p.value)`), and a marginal positive correlation between mother’s age and number of siblings (Spearman's *r* = `r round(cor.age$estimate,3)`, *p*=`r printp(cor.age$p.value)`); older mothers tended to have more children. However, no correlation was found between mothers' age and productive vocabulary at 18 months (*r* = `r round(cor.age.vocab$estimate,3)`, *p*=`r printp(cor.age.vocab$p.value)`).
+
+## Effect of siblings on infants' productive vocabulary
+
+```{r SibGroup6 summary}
+
+sibgroup.summary <- SiblingsData %>% filter(month==18) %>%
+  group_by(SibGroup6) %>%
+  summarise(mean = mean(Total.words, na.rm=T),
+            sd = sd(Total.words, na.rm=T)) %>%
+  mutate(Variable = "Productive Vocabulary 18m") %>%
+  select(Variable, SibGroup6, mean, sd)
+
+```
+
+```{r Overall vocab: SibYN}
+
+# SibYN: Does having any number of siblings affect language development over time?
+
+sibsYN.model <- lmerTest::lmer(Log.Totalwords ~ SibsYN + month + (1|subj), data=SiblingsData, REML=FALSE)
+sibsYN.model.null <- lmerTest::lmer(Log.Totalwords ~ month + (1|subj), data=SiblingsData, REML=FALSE)
+sibsYN_anova <- anova(sibsYN.model, sibsYN.model.null) %>%
+  rename("pval" = `Pr(>Chisq)`)
+
+sibsYN_df <- sibsYN_anova$`Chi Df`[2]
+sibsYN_chisq <- sibsYN_anova$Chisq[2]
+sibsYN_p.value <- sibsYN_anova$pval[2]
+
+# SibGroup: Does having more vs. fewer vs. no siblings affect language development over time?
+
+sibgroup.model <- lmerTest::lmer(Log.Totalwords ~ SibGroup6 + month + (1|subj), data=SiblingsData, REML=FALSE)
+sibgroup.model.null <- lmerTest::lmer(Log.Totalwords ~ month + (1|subj), data=SiblingsData, REML=FALSE)
+sibgroup_anova <- anova(sibgroup.model, sibgroup.model.null) %>%
+  rename("pval" = `Pr(>Chisq)`)
+
+# sibgroup_df <- sibgroup_anova$`Chi Df`[2]
+# sibgroup_chisq <- sibgroup_anova$Chisq[2]
+# sibgroup_p.value <- sibgroup_anova$pval[2]
+
+# Sibling number: Does number of siblings affect language development over time?
+
+sibnumber.model <- lmerTest::lmer(Log.Totalwords ~ Siblings6 + month + (1|subj), data=SiblingsData, REML=FALSE)
+sibnumber.model.null <- lmerTest::lmer(Log.Totalwords ~ month + (1|subj), data=SiblingsData, REML=FALSE)
+sibnumber_anova <- anova(sibnumber.model, sibnumber.model.null) %>%
+  rename("pval" = `Pr(>Chisq)`)
+
+# sibnumber_df <- sibgroup_anova$`Chi Df`[2]
+# sibnumber_chisq <- sibgroup_anova$Chisq[2]
+# sibnumber_p.value <- sibgroup_anova$pval[2]
+
+table.sibling.model.output <- rbind(sibsYN_anova, sibgroup_anova, sibnumber_anova) %>%
+  rownames_to_column(var="Model") %>%
+  filter(Chisq > 0) %>%
+  rename("p value" = "pval",
+         "df" = "Chi Df") %>%
+  mutate(Model = fct_recode(Model,
+                            "0 vs. >0 siblings" = "sibsYN.model",
+                            "Sibling group" = "sibgroup.model",
+                            "Sibling number" = "sibnumber.model")) %>%
+  select(Model, df, Chisq, `p value`)
+
+```
+
+We next modeled the effect of siblings on productive vocabulary. Starting with a binary variable (0 vs. >0 siblings), our model revealed no effect for the presence of siblings on productive vocabulary when we included month as a fixed effect ($\chi^2 (`r sibsYN_df`)$ = `r sibsYN_chisq`, *p*=`r printp(sibsYN_p.value)`). We then modelled aggregated grouped variable (None vs. One vs. 2+) and discrete sibling number (0 vs. 1 vs. 2 vs. 3 vs. 4 siblings). In both cases, models with siblings accounted for more variance in productive vocabulary than models without it (see Table \@ref(tab:table-sibling-model-output)).
+
+``` {r table-sibling-model-output, comment=F, message=F, warning = F, echo = F, results = "asis"}
+cap = "Output from regression models comparing language development over time in relation to sibling number (binary, grouped and discrete variables). Month was included in each model as a fixed effect; subject was included as a random effect."
+apa_table(table.sibling.model.output, caption = cap, col_spanners = NULL, digits = 2, placement = "H", font_size = "small")
+```
+
+```{r descriptive statistics for sibling model outputs}
+
+siblings.model.summary <- summary(sibnumber.model)
+
+siblings.model.summary.table <- siblings.model.summary$coefficients %>%
+  as.data.frame %>%
+  rename(
+    "$b$" = "Estimate"
+    , "SE" = "Std. Error"
+    , "$df$" = "df"
+    , "$t$" = "t value"
+    , "$p$" = "Pr(>|t|)"
+  ) %>%
+  mutate(
+    Effect = papaja:::prettify_terms(rownames(.))
+  ) %>%
+  printnum(
+    digits = c(2, 2, 2, 2, 3, 0)
+    , gt1 = c(TRUE, TRUE, TRUE, TRUE, FALSE, FALSE)
+    , zero = c(TRUE, TRUE, TRUE, TRUE, FALSE, FALSE)
+  ) %>%
+  select(Effect, `$b$`, `SE`, `$t$`, `$df$`, `$p$`) %>%
+  rename("betaval" = `$b$`)
+
+siblingnum.beta <- as.numeric(siblings.model.summary.table$betaval[2])
+
+siblingnum.beta <- abs(siblingnum.beta*100)
+
+sibgroup.model.summary <- summary(sibgroup.model)
+
+table.sibgroup.model.summary <- sibgroup.model.summary$coefficients %>%
+  as.data.frame %>%
+  rename(
+    "$b$" = "Estimate"
+    , "SE" = "Std. Error"
+    , "$df$" = "df"
+    , "$t$" = "t value"
+    , "$p$" = "Pr(>|t|)"
+  ) %>%
+  mutate(
+    Effect = papaja:::prettify_terms(rownames(.))
+  ) %>%
+  printnum(
+    digits = c(2, 2, 2, 2, 3, 0)
+    , gt1 = c(TRUE, TRUE, TRUE, TRUE, FALSE, FALSE)
+    , zero = c(TRUE, TRUE, TRUE, TRUE, FALSE, FALSE)
+  ) %>%
+  select(Effect, `$b$`, `SE`, `$t$`, `$df$`, `$p$`) %>%
+  rename("betaval" = `$b$`)
+
+sibgroup1.beta <- as.numeric(table.sibgroup.model.summary$betaval[2])
+
+sibgroup1.beta <- abs(sibgroup1.beta*100)
+
+sibgroup2.beta <- as.numeric(table.sibgroup.model.summary$betaval[3])
+
+sibgroup2.beta <- abs(sibgroup2.beta*100)
+
+```
+
+```{r post hoc tests sibling groups, include=FALSE}
+
+sibgroup_wilcox_none_one <- wilcox.test(
+  x = subset(SiblingsData, month == 18 & SibGroup6 == "None")$Total.words
+  , y = subset(SiblingsData, month == 18 & SibGroup6 == "One")$Total.words
+  , paired = FALSE
+)
+
+sibgroup_wilcox_one_two <- wilcox.test(
+  x = subset(SiblingsData, month == 18 & SibGroup6 == "2+")$Total.words
+  , y = subset(SiblingsData, month == 18 & SibGroup6 == "One")$Total.words
+  , paired = FALSE
+)
+
+```
+
+In short, having more siblings was associated with a smaller productive vocabulary over the course of early development. This is consistent with previous findings [@hoff-ginsberg_relation_1998; @pine_variation_1995]. Moreover, for each additional sibling, infants acquired `r siblingnum.beta`% fewer words. Looking at differences between sibling groups (0 vs. 1 vs. 2+ siblings), we see that infants with one sibling produce only `r sibgroup1.beta`% fewer words than firstborns over the course of our analysis, while infants with two or more siblings produce `r sibgroup2.beta`% fewer words. See See Table \@ref(tab:table-data-summary) and Figure \@ref(fig:Figure-SibGroup). Post-hoc Wilcoxon Rank Sum tests comparing reported productive vocabulary at 18 months revealed significantly larger vocabularies for infants with one sibling compared to those with two or more siblings (*W*=`r round(sibgroup_wilcox_one_two$statistic)`, *p* = `r printp(sibgroup_wilcox_one_two$p.value)`), but no difference between infants with one sibling and those with no siblings (*W*=`r sibgroup_wilcox_none_one$statistic`, *p* = `r printp(sibgroup_wilcox_none_one$p.value)`; Bonferroni corrections applied).
+
+
+```{r Figure-SibGroup, echo=FALSE, fig.cap=cap, fig.pos='H', message=FALSE, warning=FALSE}
+
+par(cex = 1.2)
+Figure.SibGroup
+cap <- sprintf("Productive vocabulary acquisition over time. Colors denote sibling group; line with grey confidence band reflects local estimator (loess) fit over individual infants’ vocabulary at each month. Triangles indicate mean with bootstrapped CIs computed over each month's data. Points (jittered horizontally) show individual infants' vocabulary size at each month. Y-axis utilizes log-transformed vertical spacing for visual clarity.")
+
+```
+
+
+## Effect of siblings on infants' input
+
+Next, we turn to our three input measures in turn to compare how input differs for infants across our three sibling groups (0 vs. 1 vs. 2+ siblings). We report analyses considering the three input measures as a function of sibling group; all results reported below *except Parental Input* were consistent when we re-ran our models with discrete sibling number as a fixed effect (see Supplementary Data).
+
+```{r effects of age sex and mot edu on input, message=FALSE, warning=FALSE, include=FALSE}
+
+# age
+
+age.test.input <- lmer(Log.n ~ month + (1|subj), data = subset(speaker.type, Speaker == "MOT"), REML=FALSE)
+age.test.input.null <- lmer(Log.n ~ (1|subj), data = subset(speaker.type, Speaker == "MOT"), REML=FALSE)
+
+age.test.input_anova <- anova(age.test.input, age.test.input.null) %>% # Strong effect for age - include in all further models
+    rename("pval" = `Pr(>Chisq)`)  # no effect for age
+
+age.test.input_df <- age.test.input_anova$`Chi Df`[2]
+age.test.input_chisq <- age.test.input_anova$Chisq[2]
+age.test.input_p.value <- age.test.input_anova$pval[2]
+
+# sex
+
+sex.test.input <- lmer(Log.n ~ sex + (1|subj), data = subset(speaker.type, Speaker == "MOT"), REML=FALSE)
+sex.test.input.null <- lmer(Log.n ~ (1|subj), data = subset(speaker.type, Speaker == "MOT"), REML=FALSE)
+
+sex.test.input_anova <- anova(sex.test.input, sex.test.input.null) %>% # Strong effect for sex - include in all further models
+    rename("pval" = `Pr(>Chisq)`)  # no effect for sex
+
+sex.test.input_df <- sex.test.input_anova$`Chi Df`[2]
+sex.test.input_chisq <- sex.test.input_anova$Chisq[2]
+sex.test.input_p.value <- sex.test.input_anova$pval[2]
+```
+
+```{r input correlations, message=TRUE, warning=FALSE}
+
+cor.edu.input <- cor.test(
+  x = subset(speaker.type, month == 17 & Speaker == "MOT")$n
+  , y = subset(speaker.type, month == 17 & Speaker == "MOT")$MOTedulevel
+  , method = "spearman"
+)
+
+cor.vocab.input <- cor.test(
+  x = subset(SiblingsData, month == 17)$Total.words
+  , y = subset(speaker.type, month == 17 & Speaker == "MOT")$n
+  , method = "spearman"
+)
+
+cor.age.input<- cor.test(
+  x = subset(speaker.type, month == 17 & Speaker == "MOT")$n
+  , y = subset(speaker.type, month == 17 & Speaker == "MOT")$age_mom
+  , method = "spearman"
+)
+
+```
+
+As with our previous analysis, we first modelled infants' input (maternal input only) as a function of age, sex and maternal education. This time, there was no effect for age, nor sex or maternal education (*p*s all>`r printp(cor.edu.input$p.value)`). We therefore removed age as a fixed effect in our models. Again, we found no correlation between mothers' age and amount of input provided, and no correlation between number of words produced by the infant and amount of input at 17 months (*p*s >`r printp(cor.vocab.input$p.value)`). Input quantity was therefore not affected by the infant's language abilities.
+
+### Parental Input
+
+```{r Input - summary}
+
+speaker.summary <- 
+  speaker.type %>% 
+  mutate(total.n = sum(n)) %>%
+  group_by(Speaker, total.n) %>%
+  summarise(total.speaker = sum(n)) %>%
+  mutate(PC.input = (total.speaker/total.n)*100)
+
+mean.input.MOT <- speaker.type %>% filter(Speaker == "MOT") %>% summarise(mean.input = mean(n),  # 136.69
+                                                                          med.input = median(n),
+                                                                          sd.input = sd(n))      # 111.01
+
+mean.input.FAT <- speaker.type %>% filter(Speaker == "FAT") %>% summarise(mean.input = mean(n),  # 18.14
+                                                                          med.input = median(n),
+                                                                          sd.input = sd(n))      # 42.01
+
+mean.input.SIB <- speaker.type %>% filter(Speaker == "SIBLING" & SibGroup6 != "None") %>% 
+  summarise(mean.input = mean(n),  # 13
+            med.input = median(n), # 6
+            sd.input = sd(n))      # 15.8
+
+mean.input.all <- speaker.type %>%
+  group_by(SibGroup6) %>%
+  summarise(mean.input = mean(n),  # 53.9
+            med.input = median(n),
+            sd.input = sd(n))      # 90.6
+
+
+```
+
+```{r table-data-summary, comment=F, message=F, warning = F, echo = F, results = "asis"}
+cap = "Data summary of all three input variables and reported vocabulary size at 18 months."
+kable(table.data.summary, "latex", booktabs = T, caption = cap, digits = 2, align = "c")  %>%
+  add_header_above(c(" " = 1, "No siblings" = 2, "1 sibling" = 2, "2+ siblings" = 2))
+```
+
+```{r Figure-Speaker-count, echo=FALSE, fig.cap=cap, fig.pos='H', message=FALSE, warning=FALSE}
+
+par(cex = 1.2)
+Figure.speaker.count
+cap <- sprintf("Mean number of words produced by Mothers, Fathers and Siblings across sessions recorded between 10-17 months. Circles represent values for individual infants; red triangles show group means.")
+
+```
+
+```{r speaker.type model, message=FALSE, warning=FALSE}
+
+#shapiro.test(speaker.type$n) # not normal
+
+speaker.type.model <- lmerTest::lmer(Log.n ~ SibGroup6 + (1|subj), data=speaker.type, REML=FALSE)
+speaker.type.model.null <- lmerTest::lmer(Log.n ~ (1|subj), data=speaker.type, REML=FALSE)
+
+speaker.type_anova <- anova(speaker.type.model, speaker.type.model.null) %>%
+  rename("pval" = `Pr(>Chisq)`)
+
+speaker.type_df <- speaker.type_anova$`Chi Df`[2]
+speaker.type_chisq <- speaker.type_anova$Chisq[2]
+speaker.type_p.value <- speaker.type_anova$pval[2]
+
+# post hoc comparisons
+
+speaker.type.mean <- speaker.type %>% group_by(subj) %>% 
+  mutate(MeanN = mean(n))
+
+
+speaker.type_wilcox_none_one <- wilcox.test(
+  x = subset(speaker.type.mean, SibGroup6 == "None")$MeanN
+  , y = subset(speaker.type.mean, SibGroup6 == "One")$MeanN
+  , paired = FALSE
+)
+
+speaker.type_wilcox_one_two <- wilcox.test(
+  x = subset(speaker.type.mean, SibGroup6 == "2+")$MeanN
+  , y = subset(speaker.type.mean, SibGroup6 == "One")$MeanN
+  , paired = FALSE
+)
+
+
+input.diff <- 
+  speaker.type %>% 
+  group_by(SibGroup6) %>%
+ summarise(meaninput = mean(Total.input))
+
+noneonediff <- input.diff$meaninput[1] - input.diff$meaninput[2]
+nonetwodiff <- input.diff$meaninput[1] - input.diff$meaninput[3]
+onetwodiff <- input.diff$meaninput[2] - input.diff$meaninput[3]
+
+
+
+```
+
+Mothers provided the largest proportion of the infants’ overall input across the sample (`r round(speaker.summary$PC.input[2],0)`%, M=`r mean.input.MOT$mean.input` object words, Mdn=`r mean.input.MOT$med.input`, SD=`r mean.input.MOT$sd.input`). Fathers accounted for an average of `r round(speaker.summary$PC.input[1],0)`% (M=`r mean.input.FAT$mean.input`, Mdn=`r mean.input.FAT$med.input`, SD=`r mean.input.FAT$sd.input`), while infants with siblings received around `r round(speaker.summary$PC.input[3],0)`% of their input from their brothers and sisters (M=`r mean.input.SIB$mean.input`, Mdn=`r mean.input.SIB$med.input`, SD=`r mean.input.SIB$sd.input`). See Table \@ref(tab:table-data-summary) and Figure \@ref(fig:Figure-Speaker-count). We tested overall quantity of input (aggregated across mothers, fathers, and siblings) in our model, and a significant effect was found ($\chi^2 (`r speaker.type_df`)$ = `r speaker.type_chisq`, *p*`r printp(speaker.type_p.value)`). We then ran post-hoc tests to compare mean amount of input across sibling groups. With Bonferroni corrections applied ($a$=`r round(0.05/2,3)`), these showed a significant difference in average input received between infants with one sibling versus those with two or more siblings (*W*=`r round(speaker.type_wilcox_one_two$statistic)`, *p*`r printp(speaker.type_wilcox_one_two$p.value)`), while amount of input did not differ between infants with no siblings and those with one sibling (*W*=`r round(speaker.type_wilcox_none_one$statistic)`, *p* = `r printp(speaker.type_wilcox_none_one$p.value)`). On average, infants with no siblings heard `r round(noneonediff,0)` more object words in their input than those with one sibling, and `r round(nonetwodiff,0)` more than those with two or more siblings. Infants with one sibling heard `r round(onetwodiff,0)` more object words than those with two or more siblings.
+
+```{r Sibling input, message=FALSE, warning=FALSE}
+
+# Difference in amount of input from siblings
+
+speaker.type.SIB <- speaker.type %>% group_by(subj) %>% 
+  filter(Speaker == "SIBLING") %>%
+  mutate(MeanN = mean(n),
+         TotalN = sum(n)) %>%
+  filter(month == 17)
+
+speaker.type.SIB_wilcox_none_one <- wilcox.test(
+  x = subset(speaker.type.SIB, SibGroup6 == "None")$MeanN
+  , y = subset(speaker.type.SIB, SibGroup6 == "One")$MeanN
+  , paired = FALSE
+) # p<.001
+
+speaker.type.SIB_wilcox_one_two <- wilcox.test(
+  x = subset(speaker.type.SIB, SibGroup6 == "2+")$MeanN
+  , y = subset(speaker.type.SIB, SibGroup6 == "One")$MeanN
+  , paired = FALSE
+) # NS
+
+# Difference in amount of input from mothers
+
+speaker.type.MOT <- speaker.type %>% group_by(subj) %>% 
+  filter(Speaker == "MOT") %>%
+  mutate(MeanN = mean(n))  %>%
+  filter(month == 17)
+
+speaker.type.MOT_wilcox_none_one <- wilcox.test(
+  x = subset(speaker.type.MOT, SibGroup6 == "None")$MeanN
+  , y = subset(speaker.type.MOT, SibGroup6 == "One")$MeanN
+  , paired = FALSE
+) # NS
+
+speaker.type.MOT_wilcox_one_two <- wilcox.test(
+  x = subset(speaker.type.MOT, SibGroup6 == "2+")$MeanN
+  , y = subset(speaker.type.MOT, SibGroup6 == "One")$MeanN
+  , paired = FALSE
+) # p<.001
+
+
+```
+
+Next, we tested how much of that input came from siblings (for infants who had siblings), as oppose to adult caregivers. Wilcoxon Rank Sum tests showed no difference between the amount of sibling input received by infants with two or more siblings (*W*=`r round(speaker.type.SIB_wilcox_one_two$statistic)`, *p*=`r printp(speaker.type.SIB_wilcox_one_two$p.value)`, Bonferroni corrections applied). Looking at maternal input only, infants with two or more siblings heard significantly less input from their mothers than those with one sibling (*W*=`r round(speaker.type.MOT_wilcox_one_two$statistic)`, *p*=`r printp(speaker.type.MOT_wilcox_one_two$p.value)`), while there was no difference between those with one vs. no siblings (*W*=`r round(speaker.type.MOT_wilcox_none_one$statistic)`, *p* = `r printp(speaker.type.MOT_wilcox_none_one$p.value)`).
+
+### Early-acquired words
+
+```{r in.cdi summary}
+
+in.cdi.summary <- in.cdi %>% group_by(SibGroup6, subj) %>% 
+  summarize(meanPC = mean(PC),
+         medPC = median(PC),
+         sdPC = sd(PC)) 
+
+in.cdi.summary.n <- in.cdi %>% group_by(SibGroup6, subj) %>% 
+  summarize(meann = mean(n),
+         medn = median(n),
+         sdn = sd(n)) 
+
+```
+
+```{r in.cdi model PC}
+
+in.cdi.model <- lmerTest::lmer(PC ~ SibGroup6 + month + (1|subj), data=in.cdi, REML=FALSE)
+in.cdi.model.null <- lmerTest::lmer(PC ~ month + (1|subj), data=in.cdi, REML=FALSE)
+in.cdi.anova <- anova(in.cdi.model, in.cdi.model.null) %>% # p<.01
+  rename("pval" = `Pr(>Chisq)`)
+
+in.cdi_df <- in.cdi.anova$`Chi Df`[2]
+in.cdi_chisq <- in.cdi.anova$Chisq[2]
+in.cdi_p.value <- in.cdi.anova$pval[2] 
+
+# Posthoc tests
+
+in.cdi_wilcox_none_one <- wilcox.test(
+  x = subset(in.cdi.summary, SibGroup6 == "None")$meanPC
+  , y = subset(in.cdi.summary, SibGroup6 == "One")$meanPC
+  , paired = FALSE
+) # NS
+
+in.cdi_wilcox_one_two <- wilcox.test(
+  x = subset(in.cdi.summary, SibGroup6 == "2+")$meanPC
+  , y = subset(in.cdi.summary, SibGroup6 == "One")$meanPC
+  , paired = FALSE
+) # p=.01
+
+
+```
+
+```{r in.cdi model n, include=FALSE}
+
+shapiro.test(in.cdi$n)
+
+in.cdi.model.n <- lmerTest::lmer(log(n) ~ SibGroup6 + month + (1|subj), data=in.cdi, REML=FALSE)
+in.cdi.model.n.null <- lmerTest::lmer(log(n) ~ month + (1|subj), data=in.cdi, REML=FALSE)
+in.cdi.n.anova <- anova(in.cdi.model.n, in.cdi.model.n.null) %>% # p<.01
+  rename("pval" = `Pr(>Chisq)`)
+
+in.cdi.n_df <- in.cdi.n.anova$`Chi Df`[2]
+in.cdi.n_chisq <- in.cdi.n.anova$Chisq[2]
+in.cdi.n_p.value <- in.cdi.n.anova$pval[2] 
+
+# Posthoc tests
+
+in.cdi.n_wilcox_none_one <- wilcox.test(
+  x = subset(in.cdi.summary, SibGroup6 == "None")$meanPC
+  , y = subset(in.cdi.summary, SibGroup6 == "One")$meanPC
+  , paired = FALSE
+) # NS
+
+in.cdi.n_wilcox_one_two <- wilcox.test(
+  x = subset(in.cdi.summary, SibGroup6 == "2+")$meanPC
+  , y = subset(in.cdi.summary, SibGroup6 == "One")$meanPC
+  , paired = FALSE
+) # p=.01
+
+
+```
+
+We expected infants with more siblings to hear fewer lexically simple words (i.e. fewer words that occur on the CDI). We consider this with regard to both amount and proportion of total household input. On average, `r round(mean(in.cdi.summary$meanPC)*100)`% of the object words heard in the infants’ inputs were lexically simple (Mdn=`r printnum(mean(in.cdi.summary$medPC))`, SD=`r printnum(mean(in.cdi.summary$sdPC))`). Infants with two or more siblings heard a lower proportion of such words overall (see See Table \@ref(tab:table-data-summary) and Figure \@ref(fig:Figure-in-cdi)). Indeed, sibling group accounted for a significant amount of variance on proportion of early-acquired words heard in the input ($\chi^2 (`r in.cdi_df`)$ = `r in.cdi_chisq`, *p*=`r printp(in.cdi_p.value)`). Comparing proportion of early-acquired words in the object words produced by mothers, fathers and siblings in the input, post-hoc Wilcoxon Rank Sum tests showed that infants with two or more siblings heard significantly fewer early-acquired words (*W*=`r round(in.cdi_wilcox_one_two$statistic)`, *p*=`r printp(in.cdi_wilcox_one_two$p.value)`), while there was no difference between infants with one vs. no siblings (*W*=`r round(in.cdi_wilcox_none_one$statistic)`, *p*=`r printp(in.cdi_wilcox_none_one$p.value)`, Bonferroni corrections applied). All results were consistent when the same models were run on total number of learnable words heard in the input.
+
+```{r Figure-in-cdi, echo=FALSE, fig.cap=cap, fig.pos='H', message=FALSE, warning=FALSE}
+
+par(cex = 1.2)
+Figure.in.cdi
+cap <- sprintf("Proportion of early-acquired words in the input, across sibling groups. Error bars indicate mean learnable words heard across groups, with bootstrapped 95PC CIs computed over all data. Dots indicate mean number of early-acquired words per infant, collapsed across age and jittered horizontally for visual clarity.")
+
+```
+
+### Object presence
+
+```{r Object.presence summary}
+
+object.presence.summary <- object.presence %>%
+  group_by(subj, SibGroup6) %>%
+  summarise(mean.object = mean(PC),
+            sd.object = sd(PC),
+            med.object = median(PC))
+
+```
+
+```{r object.presence model}
+
+object.presence.model <- lmerTest::lmer(PC ~ SibGroup6 + month + (1|subj), data=object.presence, REML=FALSE)
+object.presence.model.null <- lmerTest::lmer(PC ~ month + (1|subj), data=object.presence, REML=FALSE)
+object.presence.anova <- anova(object.presence.model, object.presence.model.null) %>% # p<.01
+  rename("pval" = `Pr(>Chisq)`)
+
+object.presence_df <- object.presence.anova$`Chi Df`[2]
+object.presence_chisq <- object.presence.anova$Chisq[2]
+object.presence_p.value <- object.presence.anova$pval[2] 
+
+
+object.presence.model.summary <- summary(object.presence.model)
+
+table.object.presence.model.summary <- object.presence.model.summary$coefficients %>%
+  as.data.frame %>%
+  rename(
+    "$b$" = "Estimate"
+    , "SE" = "Std. Error"
+    , "$df$" = "df"
+    , "$t$" = "t value"
+    , "$p$" = "Pr(>|t|)"
+  ) %>%
+  mutate(
+    Effect = papaja:::prettify_terms(rownames(.))
+  ) %>%
+  printnum(
+    digits = c(2, 2, 2, 2, 3, 0)
+    , gt1 = c(TRUE, TRUE, TRUE, TRUE, FALSE, FALSE)
+    , zero = c(TRUE, TRUE, TRUE, TRUE, FALSE, FALSE)
+  ) %>%
+  select(Effect, `$b$`, `SE`, `$t$`, `$df$`, `$p$`) %>%
+  rename("betaval" = `$b$`)
+
+object.presence1.beta <- as.numeric(table.object.presence.model.summary$betaval[2])  # beta vals for Sib Group One
+
+object.presence1.beta <- abs(object.presence1.beta*100)
+
+object.presence2.beta <- as.numeric(table.object.presence.model.summary$betaval[3]) # beta vals for Sib Group 2+
+
+object.presence2.beta <- abs(object.presence2.beta*100)
+
+# Posthoc tests
+
+object.presence_wilcox_none_one <- wilcox.test(
+  x = subset(object.presence.summary, SibGroup6 == "None")$mean.object
+  , y = subset(object.presence.summary, SibGroup6 == "One")$mean.object
+  , paired = FALSE
+) # p<.001
+
+object.presence_wilcox_one_two <- wilcox.test(
+  x = subset(object.presence.summary, SibGroup6 == "2+")$mean.object
+  , y = subset(object.presence.summary, SibGroup6 == "One")$mean.object
+  , paired = FALSE
+) # p=.02
+
+
+```
+
+```{r Figure-object-presence, echo=FALSE, fig.cap=cap, fig.pos='H', message=FALSE, warning=FALSE}
+
+par(cex = 1.2)
+Figure.object.presence
+cap <- sprintf("Proportion of input words produced with object presence in the input across sibling groups. Error bars and black triangles show 95PC CIs and mean proportion of object presence across sibling groups. Dots indicate mean proportion of object presence per infant, collapsing across age and jittered horizontally for visual clarity.")
+
+```
+
+On average, `r round(mean(object.presence.summary$mean.object)*100)`% of utterances were produced in the presence of the relevant object (Mdn=`r mean(object.presence.summary$med.object)`, SD=`r mean(object.presence.summary$sd.object)`). We hypothesized that infants with more siblings would hear fewer words in referentially transparent conditions (i.e. they would experience lower object presence) than those with fewer siblings. Indeed, modelling the quantity of object present tokens that infants heard, we find a significant effect for sibling group on object presence ($\chi^2 (`r object.presence_df`)$ = `r object.presence_chisq`, *p*`r printp(object.presence_p.value)`). See Figure \@ref(fig:Figure-object-presence). Infants with no siblings experienced `r object.presence2.beta`% more object presence in their input than those with two or more siblings, and `r object.presence1.beta`% more than those with one sibling. Post-hoc comparisons revealed significant between-group differences: infants with no siblings experienced significantly more object presence than those with one sibling (*W*=`r round(object.presence_wilcox_none_one$statistic)`, *p*=`r printp(object.presence_wilcox_none_one$p.value)`, Bonferroni corrections applied). Likewise, infants with one sibling experienced significantly more object presence those with two or more siblings (*W*=`r round(object.presence_wilcox_one_two$statistic)`, *p*=`r printp(object.presence_wilcox_one_two$p.value)`). See Table \@ref(tab:table-data-summary).
+
+# Discussion
+Indeed, when addressing systematicity in development it is necessary to consider how perception and production might come togetether to shape acquisition. This reflects a dynamic systems approach [Thelen & Smith, 1994]. This theoretical framework, outlined comprehensively by Thelen and Smith [1994], approaches child development with a consideration of the inter-connectivity of all learning mechanisms, creating a dynamic, flexible, non-linear and self-organizing system that changes and develops through exposure to both novel and familiar experiences. The subsequent actions of the child relate to these experiences, as they develop within a framework built upon their own encounters with the surrounding world. We might interpret phonological development to reflect the selection or adaptation of lexical units to fit a set of easily-accessible articulatory **categories**. That is, an infant systematically acts upon new understanding (i.e. acquired receptive vocabulary items) within the limitations of their development, selecting existing categories to deal with challenges presented in production. It is here that we find a mismatch between a child's productive vocabulary and the actual production of their early words. In the same sense, Vihman [2010] notes that an infant’s phonological templates reflect an expansion of early-established categories; templates include consonants that are ‘motorically accessible’ (p.15) and familiar, perhaps influenced by salient aspects of the ambient language and babble production. As an infant selects and then adapts an increasing number of words to fit their preferred output patterns, these forms become increasingly entrenched in production, forming a strong 'attractor state', in Thelen and Smith's [1994] terms, which 'pulls in' newly-acquired forms.
+
+Vihman [2019, p.52] interprets templates through a dynamic systems framework as follows:
+
+"the concept of a developmental ‘attractor’ is a way of describing ‘comfort zones’ for the individual child in any area of learning and change. The attractor is a stable state, though not necessarily a final or fully successful one. It is a plateau or ‘landing point’ in the process of development, which will give way to variability only under an accumulation of pressures from other areas of action or experience before the system settles into a new attractor state. ...**[Templates] themselves can be seen as attractors**, accessible motoric routines that serve the child well for a while but that nevertheless have to be overcome as the child continues to monitor and modify his own vocal production in the interest of matching that of his interlocutors — i.e., to achieve ‘accuracy’." (italics in original)
+
+This interpretation of phonological development within a dynamic systems framework prompts the question of what the trajectory of early lexical development will look like if infants are drawing on systematic production patterns in early development. The 'comfort zones' that Vihman refers to here are assumed to be periods of more systematic production: periods in which infants draw heavily upon a limited set of articulatory processes in order to integrate newly-acquired words (or perhaps segments, syllables, or other linguistic units) into the lexicon. As a result, we would expect periods of higher systematicity to be followed by periods of change. Change in this sense might look like progress - perhaps the lexicon increases and/or words become more accurate - but it also might look like regression, as systematicity gives way to a more varied output and the child targets more phonologically-complex forms. In Vihman's terms, the implementation of more 'selected' and then 'adapted' words reflects a 'stable state' of development, whereas the shift towards acquisition of a more varied set of lexical items reflects instability as the infant moves towards a more adult-like lexicon. 
+
+
+
+
+[^1]: See Vihman [2016, 2019] for a comprehensive background into prosodic structures.
+
+[^2]: Vihman [2019] defines a structure or template as being dominant in the child's lexicon if it constitutes >=10% of all word tokens
+
+[^3]: Note that templates can also show ambient language influences: Vihman and Vihman [2011] identify an English-Estonian bilingual child's front-rising diphthong template, which is influenced by Estonian but used in the production of both English and Estonian words.
+
+[^3]: A third model - Lure of the Associates - has also been considered in some studies [Hills et al., 2009; Siew & Vitevitch, 2020] but will not be considered here as existing studies do not show this model to present a convincing representation of lexical development.
+
+[^4]: Note that these are not mutually exclusive.
+
+
+
+\newpage
+
+# References
+```{r create_r-references}
+r_refs(file = "r-references.bib")
+```
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+<div id = "refs"></div>
+\endgroup
