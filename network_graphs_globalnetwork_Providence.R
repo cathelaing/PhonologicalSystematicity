@@ -8,6 +8,9 @@ source("prelims.R")
 
 globaldistance_providence <- feather::read_feather("Data/large_files/globaldistance_Providence_full.feather")
 
+# globaldistance_providence %>% filter(Speaker == "Naima") %>% 
+#   group_by(age) %>% tally()
+
 first_instance <- feather::read_feather("Data/first_instance_base.feather")
 
 networksize <- globaldistance_providence %>%         # create a mock dataset that imitates the size of the network at each month
@@ -162,8 +165,6 @@ globalpathlength_target_base <- melt(globalpathlength_target) %>%
 
 globalpathlength <- rbind(globalpathlength_actual_base, globalpathlength_target_base)
 
-
-
 globalpathlength <- globalpathlength %>% 
   mutate(age = as.numeric(age)) %>%
   left_join(networksize) %>%
@@ -224,7 +225,6 @@ globalclusteringcoef_target_avg_base <- melt(globalclusteringcoef_target_avg) %>
 
 globalclusteringcoef_global <- rbind(globalclusteringcoef_actual_global_base, globalclusteringcoef_target_global_base)
 globalclusteringcoef_avg <- rbind(globalclusteringcoef_actual_avg_base, globalclusteringcoef_target_avg_base)
-
 
 globalsmallworlddata <- globalpathlength %>% 
   left_join(globalclusteringcoef_global) %>%

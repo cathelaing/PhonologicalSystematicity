@@ -7,6 +7,8 @@ source("prelims.R")
 data_summ <- feather::read_feather("Data/large_files/data_summ.feather")
 distance_full <- feather::read_feather("Data/large_files/distance_full.feather")
 
+distance_full %>% filter(age > 30)
+
 # Actual data
 
 # Run just for Naima, whose data is too big to include in the function above!
@@ -4330,6 +4332,7 @@ globaldistance_actual_NaimaC <- melt(globaldistance_actual_NaimaC_list) %>%
 
 globaldistance_actual_NaimaA <- feather::read_feather("Data/large_files/globaldistance_actual_NaimaA.feather")
 globaldistance_actual_NaimaB <- feather::read_feather("Data/large_files/globaldistance_actual_NaimaB.feather")
+globaldistance_actual_NaimaC <- feather::read_feather("Data/large_files/globaldistance_actual_NaimaC.feather")
 
 
 global_distance_actual_Naima <- rbind(globaldistance_actual_NaimaA, globaldistance_actual_NaimaB, globaldistance_actual_NaimaC)
@@ -8657,6 +8660,7 @@ globaldistance_target_NaimaC <- melt(globaldistance_target_NaimaC_list) %>%
 
 globaldistance_target_NaimaA <- feather::read_feather("Data/large_files/globaldistance_target_NaimaA.feather")
 globaldistance_target_NaimaB <- feather::read_feather("Data/large_files/globaldistance_target_NaimaB.feather")
+globaldistance_target_NaimaC <- feather::read_feather("Data/large_files/globaldistance_target_NaimaC.feather")
 
 
 global_distance_target_Naima <- rbind(globaldistance_target_NaimaA, globaldistance_target_NaimaB, globaldistance_target_NaimaC)

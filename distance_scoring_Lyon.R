@@ -361,7 +361,16 @@ comparison_data <- comparison_data %>%
   filter(!is.na(session_ordinal)) %>%
   mutate(session_ordinal = as.numeric(session_ordinal)) 
 
-write_csv(comparison_data, "Data/large_files/comparison_data_Lyon.csv")
+#write_csv(comparison_data, "Data/large_files/comparison_data_Lyon.csv")
+
+# data_summ_Lyon <- comparison_data_Lyon %>%
+#   #mutate(id = group_indices(., Speaker, session_ordinal)) %>%    # give each combo an id with group_indices
+#   group_by(Speaker, age, Gloss) %>%
+#   summarize_all(.funs = list(mean))
+# 
+# data_summ_Lyon <- data_summ_Lyon %>%
+#   mutate(subj_session = paste(Speaker, age, sep="_")) %>%
+#   feather::write_feather("Data/large_files/data_summ_Lyon.feather")
 
 # generate data for global matrix
 

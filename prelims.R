@@ -156,26 +156,8 @@ multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {
 
  
 comparison_data <- read_csv("Data/large_files/comparison_data.csv")
-# 
-# data_summ <- comparison_data %>%
-#   #mutate(id = group_indices(., Speaker, session_ordinal)) %>%    # give each combo an id with group_indices
-#   group_by(Speaker, age, Gloss) %>%
-#   summarize_all(.funs = list(mean))
-# 
-# data_summ <- data_summ %>%
-#   mutate(subj_session = paste(Speaker, age, sep="_")) %>%
-#   feather::write_feather("Data/large_files/data_summ.feather")
-# 
-# comparison_data_Lyon <- read_csv("Data/large_files/comparison_data_Lyon.csv")
-# 
-# data_summ_Lyon <- comparison_data_Lyon %>%
-#   #mutate(id = group_indices(., Speaker, session_ordinal)) %>%    # give each combo an id with group_indices
-#   group_by(Speaker, age, Gloss) %>%
-#   summarize_all(.funs = list(mean))
-# 
-# data_summ_Lyon <- data_summ_Lyon %>%
-#   mutate(subj_session = paste(Speaker, age, sep="_")) %>%
-#   feather::write_feather("Data/large_files/data_summ_Lyon.feather")
+
+comparison_data_Lyon <- read_csv("Data/large_files/comparison_data_Lyon.csv")
 
 lexicon <- read_csv("Data/lexicon_CDI.csv") %>% rename("gloss1" = "word")
 
@@ -186,21 +168,22 @@ globalthresholds_providence <- feather::read_feather("Data/large_files/globalthr
   left_join(lexicon, by = "gloss1") %>% 
   filter(!is.na(inCDI)) # test the data with lemmas only
 
-globalthresholds_AOP_providence <- feather::read_feather("Data/globalthresholds_AOP_providence.feather") %>% 
+globalthresholds_AOP_providence <- feather::read_feather("Data/large_files/globalthresholds_AOP_providence.feather") %>% 
   filter(threshold == 0.25) %>% 
   left_join(lexicon, by = "gloss1") %>% 
   filter(!is.na(inCDI)) # test the data with lemmas only
 
 coefs_agg_all <- feather::read_feather("Data/static_preds_all_AOP_RED.feather")  # need to figure this one out
 
-global_distance <- feather::read_feather("Data/globaldistance_Providence.feather") %>% filter((gloss1 %in% lexicon$gloss1) & 
+global_distance <- feather::read_feather("Data/large_files/globaldistance_Providence.feather") %>% filter((gloss1 %in% lexicon$gloss1) & 
                                                                                                  (gloss2 %in% lexicon$gloss1))
 
 regression_data <- feather::read_feather("Data/regression_data.feather") %>% 
   left_join(lexicon, by = "gloss1") %>% 
   filter(!is.na(inCDI)) # test the data with lemmas only
 
-globalpathlength_alldata <- feather::read_feather("Data/globalpathlength_alldata.feather")   # need to figure this one out
+globalpathlength_p <- feather::read_feather("Data/globalpathlength_providence.feather")   # need to figure this one out
+globalpathlength_l <- feather::read_feather("Data/globalpathlength_lyon.feather")   # need to figure this one out
 
 
 WPs <- feather::read_feather("Data/vocabsize_WPs.feather")

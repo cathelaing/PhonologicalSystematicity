@@ -1,14 +1,12 @@
-# Updated 26th September 2020
+# Updated 6th May 2021
 
 source("prelims.R")
 
-global_network <- globalthresholds_AOP %>% filter(threshold == 0.25)
-
 # need to start with full list of all words by age, global_network$gloss1
 
-ages <- global_network %>% filter(data_type == "target") %>% dplyr::select(Speaker, gloss1, age)
+ages <- globalthresholds_AOP_providence %>% filter(data_type == "target") %>% dplyr::select(Speaker, gloss1, age)
 
-AOP_summ <- global_network %>%
+AOP_summ <- globalthresholds_AOP_providence %>%
   mutate(Speaker_AOP = paste(Speaker, AOP, sep="_"),
          AOP = as.numeric((AOP))) %>%
   filter(data_type == "actual")
@@ -16,7 +14,7 @@ AOP_summ <- global_network %>%
 AOP_list <- AOP_summ %>%
   split(., f = .$Speaker_AOP)
 
-global_distance_summ <- global_distance %>%
+global_distance_summ <- globalthresholds_AOP_providence %>%
   mutate(Speaker_AOP = paste(Speaker, age, sep="_"))
 
 ## ACTUAL DATA
@@ -25,7 +23,7 @@ output <- vector("list", length(79)) #Prep a list to store your corr.test result
 names <- names(AOP_list)
 
 prepared_data_actual <- lapply(AOP_list, FUN = function(element) {
-  data <- global_network %>% filter(data_type == "actual" & Speaker == element$Speaker)
+  data <- globalthresholds_AOP_providence %>% filter(data_type == "actual" & Speaker == element$Speaker)
   timepoint <- data %>% filter(AOP == element$AOP)                              # select the timepoint for each network
   timepoint <- timepoint$AOP
   unknown <- data %>% filter(AOP > timepoint)                                   # filter so that only to-be-learned words are included
